@@ -6,14 +6,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:contamination": "node scripts/check-contamination.mjs",
+    "check:types": "tsc --noEmit",
+    "check:links": "node scripts/check-links.mjs",
+    "check:seo": "node scripts/check-seo.mjs",
+    "check:business": "node scripts/check-business.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:mobile": "playwright test --project=mobile-chromium",
+    "test:smoke": "playwright test tests/smoke.spec.ts",
+    "verify": "npm run check:contamination && npm run check:business && npm run check:links && npm run check:seo && npm run lint && npm run check:types && npm run build"
   },
   "dependencies": {
+    "lucide-react": "^1.31.0",
     "next": "16.3.1",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

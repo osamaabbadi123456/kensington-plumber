@@ -1,0 +1,42 @@
+url_or_asset,type,title_or_role,status,indexable,source,notes
+/,route,Plumber Kensington,implemented,yes,app/page.tsx,"Header; Hero; ProblemSelector; ServicesPreview"
+/_not-found,route,Not Found,implemented,no,app/not-found.tsx,Custom recovery page links to Home, Services and Plumbing Problems
+/services,route,Services,implemented,yes,app/services/page.tsx,Lightweight hub; individual service pages intentionally deferred
+/services/emergency-plumber,service detail,Emergency plumber,implemented,yes,app/services/emergency-plumber/page.tsx,Distinct urgent-situation structure; no 24/7 or response-time claim
+/services/leak-repair,service detail,Leak repair,implemented,yes,app/services/leak-repair/page.tsx,Distinct location-and-damage-limitation structure
+/services/blocked-toilet,service detail,Blocked toilet,implemented,yes,app/services/blocked-toilet/page.tsx,Distinct symptom-and-wider-drainage structure
+/services/toilet-repair,service detail,Toilet repair,implemented,yes,app/services/toilet-repair/page.tsx,Flush/cistern/running/leak faults; blockage intent remains on blocked-toilet
+/services/tap-repair,service detail,Tap repair,implemented,yes,app/services/tap-repair/page.tsx,Single kitchen/bathroom tap faults; whole-home pressure remains out of scope
+/services/bathroom-plumbing,service detail,Bathroom plumbing,implemented,yes,app/services/bathroom-plumbing/page.tsx,Room-level basin/bath/shower/toilet/fixture context
+/services/shower-repair,service detail,Shower repair,implemented,yes,app/services/shower-repair/page.tsx,Shower-specific temperature/pressure/leak/drainage/fitting symptoms
+/plumbing-problems/water-coming-through-ceiling,problem detail,Water coming through the ceiling,implemented,yes,app/plumbing-problems/water-coming-through-ceiling/page.tsx,Answer-first leak safety and enquiry details
+/plumbing-problems/toilet-wont-flush,problem detail,Toilet will not flush,implemented,yes,app/plumbing-problems/toilet-wont-flush/page.tsx,Flush/cistern versus blockage distinction
+/plumbing-problems/toilet-keeps-running,problem detail,Toilet keeps running,implemented,yes,app/plumbing-problems/toilet-keeps-running/page.tsx,Cistern and running-water symptom route
+/plumbing-problems/shower-going-hot-and-cold,problem detail,Shower going hot and cold,implemented,yes,app/plumbing-problems/shower-going-hot-and-cold/page.tsx,Shower temperature/pressure symptom route without boiler claims
+/plumbing-advice,route,Advice,implemented,yes,app/plumbing-advice/page.tsx,Practical guidance hub linking to the three advice pages
+/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling,advice detail,Water coming through the ceiling advice,implemented,yes,app/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling/page.tsx,Answer-first safety and leak-enquiry guidance
+/plumbing-advice/blocked-toilet-or-broken-flush,advice detail,Blocked toilet or broken flush advice,implemented,yes,app/plumbing-advice/blocked-toilet-or-broken-flush/page.tsx,Blockage versus flush-fault decision guide
+/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry,advice detail,Plumbing enquiry details guide,implemented,yes,app/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry/page.tsx,Checklist for clearer enquiry messages
+/services/radiator-plumbing,conditional service detail,Radiator plumbing,conditional,no,SEO_RESEARCH.md,Water-based scope only; avoid gas/boiler claims
+/services/water-pressure,deferred service detail,Water pressure,deferred,no,SEO_RESEARCH.md,Start as problem/advice content
+/services/commercial-plumbing,conditional service detail,Commercial plumbing,conditional,no,SEO_RESEARCH.md,Business lead scope requires confirmation
+/services/boiler-repair,research-only service detail,Boiler repair,research-only,no,SEO_RESEARCH.md,Do not publish until Gas Safe/business truth is verified
+/plumbing-problems,route,Plumbing Problems,implemented,yes,app/plumbing-problems/page.tsx,Symptom hub; individual problem pages intentionally deferred
+/areas,route,Areas,implemented,yes,app/areas/page.tsx,Confirmed Kensington/W8 scope only; no neighbouring area pages published without coverage confirmation
+/about,route,About,implemented,yes,app/about/page.tsx,Describes the enquiry/lead-generation model
+/contact,route,Contact,implemented,yes,app/contact/page.tsx,WhatsApp/email enquiry details and transparent Kensington/W8 routing copy
+app/layout.tsx,layout,Root layout and metadata,implemented,n/a,repository,"en-GB; canonical root; Open Graph; index/follow"
+app/globals.css,stylesheet,Global and component CSS,implemented,n/a,repository,Tailwind 4 import plus custom responsive CSS
+app/_components/Header.tsx,component,Header,implemented,n/a,repository,Desktop navigation and WhatsApp CTA
+app/_components/Hero.tsx,component,Hero,implemented,n/a,repository,Lucide problem icons used in the enquiry example
+app/_components/MobileNav.tsx,client-component,Mobile navigation,implemented,n/a,repository,Stateful menu with backdrop and close behaviour
+app/_components/ProblemSelector.tsx,component,Problem selector,implemented,n/a,repository,Homepage symptom cards route to implemented detail pages or the problem hub
+app/_components/ServicesPreview.tsx,component,Services preview,implemented,n/a,repository,Six cards link to the implemented services hub
+app/_components/WhatsAppIcon.tsx,component,WhatsApp SVG icon,implemented,n/a,repository,Local SVG
+app/_data/siteConfig.ts,data,Site configuration,implemented,n/a,repository,Includes primary postcode intent W8
+app/_data/contentMap.ts,data,Planned content map,implemented,n/a,repository,Planning data does not create routes
+app/not-found.tsx,route,Custom not-found recovery,implemented,no,app/not-found.tsx,Links to three valid starting points
+app/robots.ts,metadata route,Robots directives,implemented,no,app/robots.ts,Allows public crawling and references the canonical sitemap
+app/sitemap.ts,metadata route,XML sitemap,implemented,no,app/sitemap.ts,Contains the 20 real canonical indexable routes with no invented last-modified data
+app/_components/StructuredData.tsx,component,Safe JSON-LD helpers,implemented,n/a,repository,WebSite publisher; visible BreadcrumbList; Service; advice WebPage only
+scripts/check-contamination.mjs,script,Public-content city contamination check,implemented,n/a,repository,Checks app/content for Wolverhampton Camden and Brent
