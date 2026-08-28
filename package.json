@@ -14,7 +14,7 @@
     "check:business": "node scripts/check-business.mjs",
     "test:e2e": "playwright test",
     "test:e2e:mobile": "playwright test --project=mobile-chromium",
-    "test:smoke": "playwright test tests/smoke.spec.ts",
+    "test:smoke": "node scripts/run-smoke.mjs",
     "verify": "npm run check:contamination && npm run check:business && npm run check:links && npm run check:seo && npm run lint && npm run check:types && npm run build"
   },
   "dependencies": {

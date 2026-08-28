@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { AlertTriangle, ArrowDownToLine, Toilet, Wrench } from "lucide-react";
 import Header from "../../_components/Header";
+import ContentReviewed from "../../_components/ContentReviewed";
 import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "../../_components/ServicePrimitives";
 import { AdvicePageStructuredData } from "../../_components/StructuredData";
+import { getAdviceContentFreshness } from "../../_data/contentFreshness";
+
+const pagePath = "/plumbing-advice/blocked-toilet-or-broken-flush";
+const contentFreshness = getAdviceContentFreshness(pagePath);
 
 export const metadata: Metadata = {
-  title: "Blocked Toilet or Broken Flush",
-  description: "Advice for telling a toilet blockage from a flush or cistern fault before you send an enquiry in Kensington or W8.",
+  title: "Blocked Toilet or Broken Flush?",
+  description: "Learn the difference between a blocked toilet and a flush or cistern fault, then choose the right next step for a Kensington or W8 enquiry.",
   alternates: { canonical: "/plumbing-advice/blocked-toilet-or-broken-flush" },
 };
 
@@ -17,7 +22,8 @@ export default function BlockedToiletOrBrokenFlushAdvicePage() {
       <AdvicePageStructuredData
         name="Blocked toilet or broken flush"
         description="Advice for telling a toilet blockage from a flush or cistern fault before you send an enquiry in Kensington or W8."
-        path="/plumbing-advice/blocked-toilet-or-broken-flush"
+        path={pagePath}
+        dateModified={contentFreshness.reviewedAt}
       />
       <main className="service-detail advice-detail">
         <section className="service-hero service-hero-burgundy">
@@ -29,6 +35,7 @@ export default function BlockedToiletOrBrokenFlushAdvicePage() {
                   <Toilet size={30} aria-hidden="true" />
                 </span>
                 <span className="section-kicker">Advice</span>
+                <ContentReviewed reviewedAt={contentFreshness.reviewedAt} />
                 <h1>Blocked toilet or broken flush?</h1>
                 <p>
                   If the water rises and does not clear, start with a blockage. If the cistern, button,
@@ -89,34 +96,15 @@ export default function BlockedToiletOrBrokenFlushAdvicePage() {
           </div>
         </ServiceSection>
 
-        <ServiceSection eyebrow="Related routes" title="Useful next steps">
+        <ServiceSection eyebrow="Useful next reading" title="Useful next steps">
           <RelatedLinks
-            links={[
-              {
-                href: "/services/blocked-toilet",
-                label: "Blocked toilet",
-                description: "The service page for blockage-led toilet problems.",
-              },
-              {
-                href: "/services/toilet-repair",
-                label: "Toilet repair",
-                description: "For running, filling, flush and cistern faults.",
-              },
-              {
-                href: "/plumbing-problems/toilet-wont-flush",
-                label: "Toilet will not flush",
-                description: "A symptom page for flush and cistern issues.",
-              },
-              {
-                href: "/plumbing-problems/toilet-keeps-running",
-                label: "Toilet keeps running",
-                description: "A symptom page for ongoing cistern flow.",
-              },
-            ]}
+            pagePath={pagePath}
+            links={[]}
           />
         </ServiceSection>
 
         <EnquiryCTA
+          pagePath={pagePath}
           heading="Send the toilet details."
           detail="Say whether the pan is rising, the cistern is running, or the flush button or handle is not working as expected."
           message="Hi, I have a toilet problem in Kensington. It looks like..."

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import { getWhatsAppUrl } from "../_lib/whatsapp";
+import { getContextualLinks, getEnquiryBuilderHref } from "../_data/internalLinks";
 import { BreadcrumbStructuredData } from "./StructuredData";
 
 const breadcrumbPaths: Record<string, string> = {
@@ -58,19 +59,23 @@ export function ServiceSection({
   title,
   children,
   className = "",
+  id,
 }: {
   eyebrow?: string;
   title: string;
   children: React.ReactNode;
   className?: string;
+  id?: string;
 }) {
-  return <section className={`service-section ${className}`}><div className="site-shell">{eyebrow && <span className="section-kicker">{eyebrow}</span>}<h2>{title}</h2>{children}</div></section>;
+  return <section className={`service-section ${className}`} id={id}><div className="site-shell">{eyebrow && <span className="section-kicker">{eyebrow}</span>}<h2>{title}</h2>{children}</div></section>;
 }
 
-export function EnquiryCTA({ heading, detail, message }: { heading: string; detail: string; message: string }) {
-  return <section className="service-cta"><div className="site-shell service-cta-inner"><div><span className="section-kicker">Ready to send the details?</span><h2>{heading}</h2><p>{detail}</p><p className="service-cta-routing">Send the details and the enquiry can be routed to a plumbing professional covering Kensington/W8.</p></div><div className="service-cta-actions"><a className="primary-button" aria-label="Send a plumbing enquiry on WhatsApp" href={getWhatsAppUrl(message)} target="_blank" rel="noopener noreferrer"><MessageCircle size={19} aria-hidden="true" /> Send the details <ArrowRight size={18} aria-hidden="true" /></a><Link className="service-cta-contact" href="/contact">Email or contact details</Link></div></div></section>;
+export function EnquiryCTA({ heading, detail, message, pagePath }: { heading: string; detail: string; message: string; pagePath: string }) {
+  return <section className="service-cta"><div className="site-shell service-cta-inner"><div><span className="section-kicker">Ready to send the details?</span><h2>{heading}</h2><p>{detail}</p><p className="service-cta-routing">Send the details and the enquiry can be routed to a plumbing professional covering a confirmed area.</p></div><div className="service-cta-actions"><a className="primary-button" aria-label="Send the details on WhatsApp" href={getWhatsAppUrl(message)} target="_blank" rel="noopener noreferrer"><MessageCircle size={19} aria-hidden="true" /> Send the details <ArrowRight size={18} aria-hidden="true" /></a><Link className="service-cta-builder" href={getEnquiryBuilderHref(pagePath)}>Build a guided enquiry</Link><Link className="service-cta-contact" href="/contact">Email or contact details</Link></div></div></section>;
 }
 
-export function RelatedLinks({ links }: { links: Array<{ href: string; label: string; description: string }> }) {
-  return <div className="related-links">{links.map((link) => <Link href={link.href} className="related-link" key={link.href}><span><strong>{link.label}</strong><small>{link.description}</small></span><ArrowRight size={18} aria-hidden="true" /></Link>)}</div>;
+export function RelatedLinks({ links, pagePath }: { links: Array<{ href: string; label: string; description: string }>; pagePath?: string }) {
+  const resolvedLinks = pagePath ? getContextualLinks(pagePath) : links;
+
+  return <div className="related-links">{resolvedLinks.map((link) => <Link href={link.href} className="related-link" key={link.href}><span><strong>{link.label}</strong><small>{link.description}</small></span><ArrowRight size={18} aria-hidden="true" /></Link>)}</div>;
 }

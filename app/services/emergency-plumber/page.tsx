@@ -5,8 +5,8 @@ import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "..
 import { ServiceStructuredData } from "../../_components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Emergency Plumber Enquiries Kensington",
-  description: "Send a clear emergency plumbing enquiry for Kensington and W8, with practical steps to take before sharing the details.",
+  title: "Emergency Plumbing in Kensington",
+  description: "For urgent plumbing situations in Kensington or W8: see safe first steps, then send the location, visible problem and useful details.",
   alternates: { canonical: "/services/emergency-plumber" },
 };
 
@@ -18,7 +18,7 @@ export default function EmergencyPlumberPage() {
     <ServiceSection eyebrow="Common urgent situations" title="What can an urgent enquiry cover?"><div className="split-list"><ul><li>Water coming through a ceiling</li><li>A burst or visibly damaged pipe</li><li>A radiator or valve leaking onto flooring</li></ul><ul><li>An overflowing toilet that will not settle</li><li>A failed tap or connection that cannot be isolated</li><li>Sudden water loss affecting part of a property</li></ul></div></ServiceSection>
     <ServiceSection eyebrow="Help the next step" title="What to send on WhatsApp?" className="service-section-stone"><div className="details-grid"><div><Camera size={22} aria-hidden="true" /><h3>A photo if safe</h3><p>Show the fitting, affected area and where the water is travelling.</p></div><div><MapPin size={22} aria-hidden="true" /><h3>Your location</h3><p>Say Kensington or your W8 postcode area and identify the room.</p></div><div><AlertTriangle size={22} aria-hidden="true" /><h3>What changed</h3><p>Explain when it started, what is still happening and any action already taken.</p></div></div></ServiceSection>
     <section className="service-context"><div className="site-shell"><MapPin size={23} aria-hidden="true" /><div><span className="section-kicker">Kensington / W8</span><h2>Keep the location specific.</h2><p>A clear area and postcode context helps an enquiry start with the right information. This site is focused on Kensington, London.</p></div></div></section>
-    <ServiceSection eyebrow="Continue browsing" title="Related services"><RelatedLinks links={[{ href: "/services/leak-repair", label: "Leak repair", description: "For visible water leaks and damaged fittings." }, { href: "/services/blocked-toilet", label: "Blocked toilet", description: "For rising water, slow flushing or a blockage." }, { href: "/services", label: "All services", description: "Return to the main service list." }]} /></ServiceSection>
-    <EnquiryCTA heading="Send the urgent details while they are clear." detail="Describe what is happening, where it is happening and what you have done to make it safe." message="Hi, I have an urgent plumbing problem in Kensington. The issue is..." />
+    <ServiceSection eyebrow="Continue browsing" title="Related services"><RelatedLinks pagePath="/services/emergency-plumber" links={[]} /></ServiceSection>
+    <EnquiryCTA pagePath="/services/emergency-plumber" heading="Send the urgent details while they are clear." detail="Describe what is happening, where it is happening and what you have done to make it safe." message="Hi, I have an urgent plumbing problem in Kensington. The issue is..." />
   </main></>;
 }

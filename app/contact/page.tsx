@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Camera, Clock3, Mail, MapPin, MessageCircle, Wrench } from "lucide-react";
 import Link from "next/link";
 import Header from "../_components/Header";
+import ContactEnquiryBuilder from "../_components/ContactEnquiryBuilder";
+import EnquiryBuilder from "../_components/EnquiryBuilder";
 import { siteConfig } from "../_data/siteConfig";
 import { getWhatsAppUrl } from "../_lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Send a clear plumbing enquiry for Kensington and W8 by WhatsApp or email, with the details that help explain the issue.",
+  title: "Contact for Plumbing Enquiries",
+  description: "Send a plumbing enquiry by WhatsApp or email for Kensington/W8 and confirmed nearby covered areas.",
   alternates: { canonical: "/contact" },
 };
 
 const enquiryDetails = [
-  { title: "Area or postcode", detail: "Say Kensington or include W8 where it applies.", icon: MapPin },
+  { title: "Area or postcode", detail: "Choose a confirmed covered area or include the relevant postcode where it helps.", icon: MapPin },
   { title: "Room or fixture", detail: "Name the room and the toilet, tap, shower, basin, bath or pipework involved.", icon: Wrench },
   { title: "What is happening", detail: "Describe the leak, blockage, flush fault, noise or temperature change you can see.", icon: MessageCircle },
   { title: "When it started", detail: "Say whether it began suddenly, is getting worse or only happens when something is used.", icon: Clock3 },
@@ -28,23 +31,27 @@ export default function ContactPage() {
             <div>
               <span className="section-kicker">Contact</span>
               <h1>Send a clear plumbing enquiry.</h1>
-              <p>Tell us what is happening in Kensington or W8, and include a photo if it helps show the affected area. You can use WhatsApp or email to send the details.</p>
+              <p>Tell us what is happening in a confirmed covered area, and include a photo if it helps show the affected area. You can use WhatsApp or email to send the details.</p>
             </div>
             <div className="contact-routing-note">
               <MessageCircle size={24} aria-hidden="true" />
               <div>
                 <strong>How the enquiry is handled</strong>
-                <p>Send the details and the enquiry can be routed to a plumbing professional covering the area. This does not confirm availability or a visit.</p>
+                <p>Send the details and the enquiry can be routed to a plumbing professional covering the selected confirmed area. This does not confirm availability or a visit.</p>
               </div>
             </div>
           </div>
         </section>
 
+        <Suspense fallback={<EnquiryBuilder variant="contact" />}>
+          <ContactEnquiryBuilder />
+        </Suspense>
+
         <section className="contact-methods-section">
           <div className="site-shell contact-methods-grid">
             <a
               className="contact-method-card contact-whatsapp-card"
-              aria-label="Send a plumbing enquiry on WhatsApp"
+              aria-label="Describe the problem on WhatsApp — send a plumbing enquiry on WhatsApp"
               href={getWhatsAppUrl("Hi, I have a plumbing problem in Kensington. The area or postcode is...")}
               target="_blank"
               rel="noopener noreferrer"

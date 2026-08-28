@@ -10,8 +10,9 @@
 | C006 | info@plumberkensington.co.uk | Verified | Owner prompt and `siteConfig.contact` | Contact detail; mailbox delivery has not been tested |
 | C007 | Users can describe a plumbing issue and send an enquiry through WhatsApp | Verified in repository | Header/Hero links and `getWhatsAppUrl` | Do not promise acceptance, attendance, or response time |
 | C008 | Photos can help explain an issue | Allowed descriptive guidance | Current Hero copy | Do not imply diagnosis or a guaranteed outcome |
-| C009 | Confirmed public geographic scope is Kensington/W8 only | Verified | Owner prompt; local area strategy | Do not imply neighbouring-area coverage |
-| C010 | An enquiry can be routed to a plumbing professional covering Kensington/W8 | Allowed routing copy | Confirmed lead-generation model; current contact flow | Use “can be routed”; do not promise availability, dispatch, response time or a visit |
+| C009 | Confirmed public geographic scope is Kensington/W8, South Kensington, West Kensington, Earl's Court, Notting Hill, North Kensington and Holland Park | Verified | Owner confirmation, 2026-08-27 | Do not imply coverage outside this named scope |
+| C010 | An enquiry can be routed to a plumbing professional covering a confirmed area | Allowed routing copy | Confirmed lead-generation model; current contact flow | Use “can be routed”; do not promise availability, dispatch, response time or a visit |
 | C011 | WhatsApp and email are enquiry channels | Verified in repository | `/contact`, `siteConfig`, and contact helpers | Use for contact only; mailbox delivery remains untested |
+| C012 | Radiator/heating plumbing concerns can be described in an enquiry | Verified | Owner prompt, 2026-08-27 | Limit public copy to visible radiator, valve or pipework context; no boiler/gas/Gas Safe inference |
 
 All address, review, team, experience, accreditation, Gas Safe, price, response-time, 24/7, guarantee, job-count, confirmed appointment, dispatch and definite availability claims are unverified and prohibited until evidence is recorded here.

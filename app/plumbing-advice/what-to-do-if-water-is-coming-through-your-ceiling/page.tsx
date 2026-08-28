@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { Camera, Droplets, Lightbulb, TriangleAlert, Zap } from "lucide-react";
 import Header from "../../_components/Header";
+import ContentReviewed from "../../_components/ContentReviewed";
 import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "../../_components/ServicePrimitives";
 import { AdvicePageStructuredData } from "../../_components/StructuredData";
+import { getAdviceContentFreshness } from "../../_data/contentFreshness";
+
+const pagePath = "/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling";
+const contentFreshness = getAdviceContentFreshness(pagePath);
 
 export const metadata: Metadata = {
-  title: "What to Do if Water Is Coming Through Your Ceiling",
-  description: "Practical advice for a ceiling leak in Kensington or W8: what you can check safely, what to photograph and which service page to use next.",
+  title: "Ceiling Leak: What to Do Safely",
+  description: "What to do if water is coming through your ceiling: safety-first checks, what to photograph and when to send a Kensington or W8 enquiry.",
   alternates: { canonical: "/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling" },
 };
 
@@ -17,7 +22,8 @@ export default function WaterThroughCeilingAdvicePage() {
       <AdvicePageStructuredData
         name="What to do if water is coming through your ceiling"
         description="Practical advice for a ceiling leak in Kensington or W8: what you can check safely, what to photograph and which service page to use next."
-        path="/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling"
+        path={pagePath}
+        dateModified={contentFreshness.reviewedAt}
       />
       <main className="service-detail advice-detail">
         <section className="service-hero service-hero-cream">
@@ -29,6 +35,7 @@ export default function WaterThroughCeilingAdvicePage() {
                   <Droplets size={30} aria-hidden="true" />
                 </span>
                 <span className="section-kicker">Advice</span>
+                <ContentReviewed reviewedAt={contentFreshness.reviewedAt} />
                 <h1>What should you do if water is coming through the ceiling?</h1>
                 <p>
                   Treat it as a leak first. Stay clear of electrics, note the room above if you know it,
@@ -83,25 +90,10 @@ export default function WaterThroughCeilingAdvicePage() {
           </div>
         </ServiceSection>
 
-        <ServiceSection eyebrow="Related routes" title="What to read next">
+        <ServiceSection eyebrow="Useful next reading" title="What to read next">
           <RelatedLinks
-            links={[
-              {
-                href: "/plumbing-problems/water-coming-through-ceiling",
-                label: "Ceiling leak problem page",
-                description: "A symptom-led page for the same issue.",
-              },
-              {
-                href: "/services/leak-repair",
-                label: "Leak repair",
-                description: "For a visible or hidden plumbing leak.",
-              },
-              {
-                href: "/services/emergency-plumber",
-                label: "Emergency plumbing",
-                description: "For water spreading quickly or a situation that needs urgent attention.",
-              },
-            ]}
+            pagePath={pagePath}
+            links={[]}
           />
         </ServiceSection>
 
@@ -120,6 +112,7 @@ export default function WaterThroughCeilingAdvicePage() {
         </section>
 
         <EnquiryCTA
+          pagePath={pagePath}
           heading="Send the ceiling leak details."
           detail="Tell us where the water is showing, what room is above it if you know, and whether it is safe to remain nearby."
           message="Hi, I have water coming through the ceiling in Kensington. The water is showing..."

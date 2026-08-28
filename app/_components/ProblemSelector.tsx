@@ -1,56 +1,37 @@
 import Link from "next/link";
 import {
+  ArrowRight,
   CircleHelp,
   Droplets,
-  Gauge,
-  Heater,
   ShowerHead,
   Toilet,
-  WashingMachine,
 } from "lucide-react";
+import { getContactProblemHref } from "../_data/internalLinks";
 
 const problems = [
   {
-    title: "Water leaking",
-    text: "Leaks from pipes, ceilings, sinks, radiators or fittings.",
+    title: "Water coming through the ceiling",
+    text: "A ceiling stain, drip or water appearing below another room.",
     href: "/plumbing-problems/water-coming-through-ceiling",
     icon: Droplets,
   },
   {
-    title: "Toilet problem",
-    text: "Won't flush, keeps running, rising water or a blockage.",
+    title: "Toilet will not flush",
+    text: "A flush, button, handle or cistern problem that is not mainly a blockage.",
     href: "/plumbing-problems/toilet-wont-flush",
     icon: Toilet,
   },
   {
-    title: "Shower or bathroom",
-    text: "Temperature, pressure, drainage or bathroom plumbing issues.",
+    title: "Toilet keeps running",
+    text: "A cistern that continues filling or water running into the pan.",
+    href: "/plumbing-problems/toilet-keeps-running",
+    icon: Toilet,
+  },
+  {
+    title: "Shower going hot and cold",
+    text: "A shower temperature change with pressure, flow or fitting symptoms.",
     href: "/plumbing-problems/shower-going-hot-and-cold",
     icon: ShowerHead,
-  },
-  {
-    title: "Tap or sink",
-    text: "Dripping taps, no water, slow drainage or under-sink leaks.",
-    href: "/plumbing-problems#problem-list",
-    icon: WashingMachine,
-  },
-  {
-    title: "Water pressure",
-    text: "Sudden pressure loss, weak taps or uneven water flow.",
-    href: "/plumbing-problems#problem-list",
-    icon: Gauge,
-  },
-  {
-    title: "Heating or radiator",
-    text: "Radiator leaks, cold spots, pressure or hot-water issues.",
-    href: "/plumbing-problems#problem-list",
-    icon: Heater,
-  },
-  {
-    title: "Not sure",
-    text: "Describe what you can see and we can route the enquiry.",
-    href: "/plumbing-problems",
-    icon: CircleHelp,
   },
 ];
 
@@ -64,8 +45,7 @@ export default function ProblemSelector() {
           <h2>What&apos;s happening?</h2>
 
           <p>
-            You do not need to know the plumbing term. Choose the closest
-            problem and continue from there.
+            Each card opens a dedicated problem page. You do not need to know the plumbing term — choose the closest visible symptom.
           </p>
         </div>
 
@@ -86,11 +66,18 @@ export default function ProblemSelector() {
                 <div>
                   <h3>{problem.title}</h3>
                   <p>{problem.text}</p>
+                  <span className="problem-card-action">View problem</span>
                 </div>
+                <ArrowRight className="problem-card-arrow" size={19} aria-hidden="true" />
               </Link>
             );
           })}
         </div>
+        <Link className="problem-enquiry-card" href={getContactProblemHref("other")}>
+          <CircleHelp size={25} aria-hidden="true" />
+          <span><strong>Not sure what to call it?</strong><small>You do not need to diagnose the fault before you build an enquiry.</small></span>
+          <em>Build enquiry</em><ArrowRight size={19} aria-hidden="true" />
+        </Link>
       </div>
     </section>
   );

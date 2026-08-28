@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { ClipboardList, Droplets, MessageCircle, Toilet } from "lucide-react";
 import HubPage from "../_components/HubPage";
+import { getContactProblemHref } from "../_data/internalLinks";
 
 export const metadata: Metadata = {
-  title: "Plumbing Advice",
-  description: "Clear starting points for describing a plumbing problem.",
+  title: "Plumbing Advice: Clear Next Steps",
+  description: "Practical, safety-first plumbing advice to help identify a problem, avoid obvious risks and send a clearer Kensington or W8 enquiry.",
   alternates: { canonical: "/plumbing-advice" },
 };
 
@@ -36,6 +37,7 @@ export default function PlumbingAdvicePage() {
         {
           title: "Send the enquiry",
           description: "Use WhatsApp once you have the room, the fixture and a useful photo ready.",
+          href: getContactProblemHref("other"),
           icon: MessageCircle,
         },
       ]}

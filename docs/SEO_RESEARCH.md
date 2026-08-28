@@ -128,3 +128,25 @@ This follow-up used live UK SERP output for the listed area queries. It is direc
 ### Implementation decision
 
 No additional area pages are built in this batch. The live SERPs support further research for several neighbouring districts, but the confirmed public scope remains Kensington, London with W8 as the primary postcode intent. Publishing pages for SW5, SW7, W10, W11 or W14 without explicit coverage confirmation would create an unsupported service-area claim and a doorway-page risk. `/areas` remains a scope explanation and routes visitors to existing services or symptom pages rather than a location-page index.
+
+## Confirmed-area implementation note (checked 2026-08-27)
+
+The owner subsequently confirmed coverage for South Kensington, West Kensington, Earl's Court, Notting Hill, North Kensington and Holland Park. Fresh local-query searches showed distinct area treatment in independent pages and directories for all six terms, while exact volume, CPC, difficulty, rankings, Local Pack and PAA data remained unavailable and were not inferred. The new pages are authorised only because both coverage and separate local intent are now established.
+
+- South Kensington / SW7: [Yell](https://www.yell.com/s/plumbers-south%2Bkensington-south%2Bwest%2Blondon.html), [MyBuilder](https://www.mybuilder.com/plumbing/plumber-tradespeople/south-kensington?internalNavigation=true)
+- West Kensington / W14: [Kensington Plumbing Services](https://www.kensington.biz/), [MyBuilder](https://www.mybuilder.com/plumbing/plumber-tradespeople/west-kensington)
+- Earl's Court / SW5: [Checkatrade](https://www.checkatrade.com/Search/Plumber/in/Earls-Court), [MyBuilder](https://www.mybuilder.com/plumbing/plumber-tradespeople/earls-court?internalNavigation=true)
+- Notting Hill / W11: [Checkatrade](https://www.checkatrade.com/Search/Plumber/in/Notting-Hill), [Notting Hill local SERP result](https://nottinghillplumber.co.uk/)
+- North Kensington / W10: [Checkatrade](https://www.checkatrade.com/Search/Plumber/in/North-Kensington)
+- Holland Park / W8/W11 context: [Holland Park local SERP result](https://wpjheating.co.uk/plumbing-holland-park/)
+
+Competitor claims about offices, availability, prices, reviews, gas work, certifications, property types or response times were not adopted. The six pages use only postcode context, transparent enquiry routing and existing service/problem destinations.
+
+## Final local-area reset (checked 2026-08-27)
+
+The final fresh review is recorded in `reports/final-local-area-targeting.md`. It rechecked Kensington/W8, the six owner-confirmed area terms and nearby candidate names without inventing volume, ranking, Local Pack, PAA, CPC, difficulty or backlink data.
+
+- Kensington/W8 remains the homepage owner; no `/areas/kensington`, `/areas/w8`, street or postcode alias is justified.
+- The six existing confirmed-area routes remain the final set. No route was added, removed, replaced or newly placed in the sitemap by this review.
+- Ladbroke Grove and Brompton remain research-only despite visible local intent: their coverage is unconfirmed and their overlap with the authorised W10/W11/SW5/SW7 pages is not low enough to justify a page.
+- Barons Court is research-only; Kensington Olympia, Kensington High Street and Gloucester Road are not separate targets.

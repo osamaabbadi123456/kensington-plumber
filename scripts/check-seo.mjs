@@ -44,6 +44,7 @@ function normaliseCanonical(value) {
 const config = await readFile("app/_data/siteConfig.ts", "utf8");
 const layout = await readFile("app/layout.tsx", "utf8");
 const sitemap = await readFile("app/sitemap.ts", "utf8");
+const robots = await readFile("app/robots.ts", "utf8");
 const routeFiles = await pageFiles();
 const actualRoutes = routeFiles.map(routeFromPageFile).sort();
 const inventoryRoutes = [...publicRoutes].sort();
@@ -54,6 +55,8 @@ if (!config.includes(`url: "${canonicalDomain}"`)) addIssue("siteConfig.url does
 if (/localhost/i.test(layout)) addIssue("root metadata contains localhost");
 if (!/metadataBase:\s*new URL\(siteConfig\.url\)/.test(layout)) addIssue("root metadataBase is not derived from siteConfig.url");
 if (!/canonical:\s*"\/"/.test(layout)) addIssue("root metadata does not declare the home canonical");
+if (!layout.includes('import { isNetlifyPreview } from "./_lib/deployment"')) addIssue("root metadata does not use the Netlify preview indexing guard");
+if (!robots.includes('import { isNetlifyPreview } from "./_lib/deployment"')) addIssue("robots.ts does not use the Netlify preview indexing guard");
 if (!sitemap.includes('import publicRoutes from "./_data/publicRoutes.json"')) addIssue("sitemap.ts is not derived from the route inventory");
 if (!sitemap.includes("publicRoutes.map")) addIssue("sitemap.ts does not map the route inventory");
 

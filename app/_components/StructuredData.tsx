@@ -82,14 +82,16 @@ export function ServiceStructuredData({
   );
 }
 
-export function AdvicePageStructuredData({
+export function WebPageStructuredData({
   name,
   description,
   path,
+  dateModified,
 }: {
   name: string;
   description: string;
   path: string;
+  dateModified?: string;
 }) {
   const url = absoluteUrl(path);
 
@@ -103,7 +105,17 @@ export function AdvicePageStructuredData({
         url,
         inLanguage: "en-GB",
         isPartOf: { "@id": `${siteConfig.url}/#website` },
+        ...(dateModified ? { dateModified } : {}),
       }}
     />
   );
+}
+
+export function AdvicePageStructuredData(props: {
+  name: string;
+  description: string;
+  path: string;
+  dateModified?: string;
+}) {
+  return <WebPageStructuredData {...props} />;
 }

@@ -1,15 +1,22 @@
 import Link from "next/link";
 import {
+  AlertTriangle,
   ArrowUpRight,
   Bath,
   Droplets,
-  Heater,
   ShowerHead,
   Toilet,
   Wrench,
 } from "lucide-react";
 
 const services = [
+  {
+    title: "Emergency Plumbing",
+    description:
+      "For urgent situations where water is spreading, a fitting has failed or a toilet cannot be used.",
+    href: "/services/emergency-plumber",
+    icon: AlertTriangle,
+  },
   {
     title: "Leak Repair",
     description:
@@ -25,6 +32,20 @@ const services = [
     icon: Toilet,
   },
   {
+    title: "Toilet Repair",
+    description:
+      "For flush, cistern, filling and running-water faults that are not primarily blockages.",
+    href: "/services/toilet-repair",
+    icon: Wrench,
+  },
+  {
+    title: "Tap Repair",
+    description:
+      "For dripping, stiff, noisy or leaking kitchen and bathroom basin taps.",
+    href: "/services/tap-repair",
+    icon: Droplets,
+  },
+  {
     title: "Bathroom Plumbing",
     description:
       "Plumbing enquiries involving showers, basins, baths and bathroom fittings.",
@@ -38,20 +59,6 @@ const services = [
     href: "/services/shower-repair",
     icon: ShowerHead,
   },
-  {
-    title: "Pipe Repair",
-    description:
-      "For damaged, leaking or noisy pipework and related plumbing issues.",
-    href: "/services#service-list",
-    icon: Wrench,
-  },
-  {
-    title: "Heating Plumbing",
-    description:
-      "For radiator, pressure and other water-based heating plumbing enquiries.",
-    href: "/services#service-list",
-    icon: Heater,
-  },
 ];
 
 export default function ServicesPreview() {
@@ -62,11 +69,10 @@ export default function ServicesPreview() {
           <div className="section-heading services-heading">
             <span className="section-kicker">Plumbing services</span>
 
-            <h2>Know what service you need?</h2>
+            <h2>Choose a plumbing service.</h2>
 
             <p>
-              Browse common plumbing enquiry types, or start with the problem
-              you are seeing if you are unsure.
+              Each card opens a dedicated service page. If the service name is unclear, start with the problem you can see.
             </p>
           </div>
 
@@ -93,6 +99,7 @@ export default function ServicesPreview() {
                 <div>
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
+                  <span className="service-preview-action">View service</span>
                 </div>
 
                 <span className="service-card-arrow">

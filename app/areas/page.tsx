@@ -1,38 +1,56 @@
 import type { Metadata } from "next";
-import { CircleHelp, MapPin, Wrench } from "lucide-react";
-import HubPage from "../_components/HubPage";
+import { CircleHelp, MapPin, MessageCircle, Wrench } from "lucide-react";
+import Link from "next/link";
+import AreaCoverageSection from "../_components/AreaCoverageSection";
+import Header from "../_components/Header";
 
 export const metadata: Metadata = {
-  title: "Plumbing Enquiries in Kensington and W8",
-  description: "Understand the confirmed Kensington and W8 focus for this local plumbing enquiry website, then choose a service or symptom route.",
+  title: "Covered Areas for Plumbing Enquiries",
+  description: "Plumbing enquiries across Kensington/W8 and confirmed nearby areas including South Kensington, West Kensington, Earl's Court, Notting Hill and Holland Park.",
   alternates: { canonical: "/areas" },
 };
 
 export default function AreasPage() {
   return (
-    <HubPage
-      eyebrow="Confirmed local focus"
-      title="Plumbing enquiries for Kensington, London."
-      intro="This website currently publishes local plumbing enquiry information for Kensington, with W8 as its primary postcode intent. It does not claim a local office or separate coverage pages for neighbouring districts."
-      items={[
-        {
-          title: "Kensington and W8",
-          description: "Use this site to describe a plumbing issue in Kensington and include W8 where it is relevant to the enquiry.",
-          icon: MapPin,
-        },
-        {
-          title: "Choose a service",
-          description: "Go to the services hub for leaks, toilets, taps, bathrooms, showers and urgent plumbing situations.",
-          href: "/services",
-          icon: Wrench,
-        },
-        {
-          title: "Start with the symptom",
-          description: "If the service name is unclear, use the plumbing problems hub to describe what you can see first.",
-          href: "/plumbing-problems",
-          icon: CircleHelp,
-        },
-      ]}
-    />
+    <>
+      <Header />
+      <main className="areas-page">
+        <section className="areas-hero">
+          <div className="site-shell areas-hero-grid">
+            <div>
+              <span className="section-kicker">Confirmed coverage</span>
+              <h1>Choose a covered area for your plumbing enquiry.</h1>
+              <p>Kensington/W8 remains the primary local focus. The six nearby confirmed areas below have their own learning routes, so you can choose a useful service or symptom page before sending the details.</p>
+            </div>
+            <div className="areas-hero-note">
+              <MapPin size={25} aria-hidden="true" />
+              <p>An area route is not a claim of a local office, confirmed availability or a booking. It simply helps make the enquiry clearer.</p>
+            </div>
+          </div>
+        </section>
+
+        <AreaCoverageSection variant="hub" />
+
+        <section className="areas-route-section">
+          <div className="site-shell areas-route-grid">
+            <Link className="hub-card" href="/services">
+              <span className="hub-card-icon"><Wrench size={25} aria-hidden="true" /></span>
+              <span className="hub-card-copy"><strong>Choose a service</strong><span>Browse the current routes for leaks, toilets, taps, bathrooms, showers and urgent plumbing situations.</span></span>
+            </Link>
+            <Link className="hub-card" href="/plumbing-problems">
+              <span className="hub-card-icon"><CircleHelp size={25} aria-hidden="true" /></span>
+              <span className="hub-card-copy"><strong>Start with the symptom</strong><span>If the service name is unclear, choose the closest visible problem before you send the details.</span></span>
+            </Link>
+          </div>
+        </section>
+
+        <section className="areas-builder-section">
+          <div className="site-shell areas-builder-panel">
+            <div><span className="section-kicker">Ready to send the details?</span><h2>Build a plumbing enquiry.</h2><p>You do not need to know the technical name. Add the area, room, fixture and visible symptom, then choose WhatsApp or email.</p></div>
+            <Link className="primary-button" href="/contact#build-enquiry"><MessageCircle size={19} aria-hidden="true" />Build enquiry</Link>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }

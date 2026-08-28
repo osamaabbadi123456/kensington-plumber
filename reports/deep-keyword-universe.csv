@@ -1,0 +1,250 @@
+query,family,qualification,evidence_status,current_or_proposed_owner
+plumber Kensington,core local commercial,Kensington,DIRECTIONAL,/
+plumber W8,core local commercial,W8,DIRECTIONAL,/
+local plumber Kensington,core local commercial,Kensington,DIRECTIONAL,/
+local plumber W8,core local commercial,W8,DIRECTIONAL,/
+plumbing Kensington,core local commercial,Kensington,DIRECTIONAL,/
+plumbing W8,core local commercial,W8,DIRECTIONAL,/
+plumbing services Kensington,core local commercial,Kensington,DIRECTIONAL,/services
+plumbing services W8,core local commercial,W8,DIRECTIONAL,/services
+emergency plumber Kensington,core local commercial,Kensington,DIRECTIONAL,/services/emergency-plumber
+emergency plumber W8,core local commercial,W8,DIRECTIONAL,/services/emergency-plumber
+emergency plumbing Kensington,core local commercial,Kensington,DIRECTIONAL,/services/emergency-plumber
+emergency plumbing W8,core local commercial,W8,DIRECTIONAL,/services/emergency-plumber
+urgent plumber Kensington,core local commercial,Kensington,DIRECTIONAL,/services/emergency-plumber
+urgent plumber W8,core local commercial,W8,DIRECTIONAL,/services/emergency-plumber
+plumber Kensington London,core local commercial,Kensington London,DIRECTIONAL,/
+plumber in Kensington London,core local commercial,Kensington London,DIRECTIONAL,/
+plumber near Kensington London,core local commercial,Kensington London,DIRECTIONAL,/
+plumbing company Kensington,core local commercial,Kensington,DIRECTIONAL,/
+plumbing repairs Kensington,core local commercial,Kensington,DIRECTIONAL,/services
+domestic plumber Kensington,core local commercial,Kensington,DIRECTIONAL,/
+leak repair Kensington,core local commercial,Kensington,DIRECTIONAL,/services/leak-repair
+leak repair W8,core local commercial,W8,DIRECTIONAL,/services/leak-repair
+water leak Kensington,core local commercial,Kensington,DIRECTIONAL,/services/leak-repair
+water leak W8,core local commercial,W8,DIRECTIONAL,/services/leak-repair
+leaking pipe Kensington,core local commercial,Kensington,DIRECTIONAL,/services/leak-repair
+leaking pipe W8,core local commercial,W8,DIRECTIONAL,/services/leak-repair
+pipe repair Kensington,core local commercial,Kensington,DIRECTIONAL,RESEARCH_ONLY
+pipe repair W8,core local commercial,W8,DIRECTIONAL,RESEARCH_ONLY
+burst pipe Kensington,core local commercial,Kensington,DIRECTIONAL,/services/emergency-plumber
+burst pipe W8,core local commercial,W8,DIRECTIONAL,/services/emergency-plumber
+blocked toilet Kensington,core local commercial,Kensington,DIRECTIONAL,/services/blocked-toilet
+blocked toilet W8,core local commercial,W8,DIRECTIONAL,/services/blocked-toilet
+toilet repair Kensington,core local commercial,Kensington,DIRECTIONAL,/services/toilet-repair
+toilet repair W8,core local commercial,W8,DIRECTIONAL,/services/toilet-repair
+toilet plumber Kensington,core local commercial,Kensington,DIRECTIONAL,/services/toilet-repair
+toilet plumber W8,core local commercial,W8,DIRECTIONAL,/services/toilet-repair
+tap repair Kensington,core local commercial,Kensington,DIRECTIONAL,/services/tap-repair
+tap repair W8,core local commercial,W8,DIRECTIONAL,/services/tap-repair
+leaking tap Kensington,core local commercial,Kensington,DIRECTIONAL,/services/tap-repair
+leaking tap W8,core local commercial,W8,DIRECTIONAL,/services/tap-repair
+dripping tap Kensington,core local commercial,Kensington,DIRECTIONAL,/services/tap-repair
+dripping tap W8,core local commercial,W8,DIRECTIONAL,/services/tap-repair
+shower repair Kensington,core local commercial,Kensington,DIRECTIONAL,/services/shower-repair
+shower repair W8,core local commercial,W8,DIRECTIONAL,/services/shower-repair
+shower plumber Kensington,core local commercial,Kensington,DIRECTIONAL,/services/shower-repair
+shower plumber W8,core local commercial,W8,DIRECTIONAL,/services/shower-repair
+bathroom plumber Kensington,core local commercial,Kensington,DIRECTIONAL,/services/bathroom-plumbing
+bathroom plumber W8,core local commercial,W8,DIRECTIONAL,/services/bathroom-plumbing
+bathroom plumbing Kensington,core local commercial,Kensington,DIRECTIONAL,/services/bathroom-plumbing
+bathroom plumbing W8,core local commercial,W8,DIRECTIONAL,/services/bathroom-plumbing
+toilet won't flush,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-wont-flush
+toilet not flushing,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-wont-flush
+toilet won't flush after button pressed,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-wont-flush
+toilet flush button not working,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-wont-flush
+toilet handle not working,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-wont-flush
+toilet flush weak,toilet symptom,UK,DIRECTIONAL,/services/toilet-repair
+weak toilet flush,toilet symptom,UK,DIRECTIONAL,/services/toilet-repair
+toilet keeps running,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-keeps-running
+toilet constantly running,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-keeps-running
+toilet keeps filling,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-keeps-running
+toilet keeps refilling,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-keeps-running
+toilet running into pan,toilet symptom,UK,DIRECTIONAL,/plumbing-problems/toilet-keeps-running
+cistern not filling,toilet symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+toilet cistern not filling,toilet symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+cistern filling slowly,toilet symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+toilet tank not filling,toilet symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+toilet cistern slow to fill,toilet symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+toilet leaking around base,toilet symptom,UK,DIRECTIONAL,/services/toilet-repair
+toilet leaking from cistern,toilet symptom,UK,DIRECTIONAL,/services/toilet-repair
+toilet leaking from supply pipe,toilet symptom,UK,DIRECTIONAL,/services/toilet-repair
+toilet water rising when flushed,toilet symptom,UK,DIRECTIONAL,/services/blocked-toilet
+toilet water rises after flushing,toilet symptom,UK,DIRECTIONAL,/services/blocked-toilet
+toilet draining slowly,toilet symptom,UK,DIRECTIONAL,/services/blocked-toilet
+slow draining toilet,toilet symptom,UK,DIRECTIONAL,/services/blocked-toilet
+overflow from toilet cistern,toilet symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+toilet overflow pipe dripping,toilet symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+toilet overflowing after flush,toilet symptom,UK,DIRECTIONAL,/services/blocked-toilet
+toilet won't flush Kensington,toilet symptom,Kensington,DIRECTIONAL,/plumbing-problems/toilet-wont-flush
+toilet keeps running Kensington,toilet symptom,Kensington,DIRECTIONAL,/plumbing-problems/toilet-keeps-running
+cistern not filling Kensington,toilet symptom,Kensington,DIRECTIONAL,NEW_CANDIDATE
+toilet water rising Kensington,toilet symptom,Kensington,DIRECTIONAL,/services/blocked-toilet
+toilet won't flush W8,toilet symptom,W8,DIRECTIONAL,/plumbing-problems/toilet-wont-flush
+toilet keeps running W8,toilet symptom,W8,DIRECTIONAL,/plumbing-problems/toilet-keeps-running
+cistern not filling W8,toilet symptom,W8,DIRECTIONAL,NEW_CANDIDATE
+pipe leaking,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+leaking pipe,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+leaking pipe joint,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+water pipe leaking,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+pipe making noise,leak and pipe symptom,UK,DIRECTIONAL,SUPPORTING_TERM_ONLY
+pipe banging,leak and pipe symptom,UK,DIRECTIONAL,SUPPORTING_TERM_ONLY
+hidden water leak signs,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+hidden leak in house,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+water coming through ceiling,leak and pipe symptom,UK,DIRECTIONAL,/plumbing-problems/water-coming-through-ceiling
+water dripping through ceiling,leak and pipe symptom,UK,DIRECTIONAL,/plumbing-problems/water-coming-through-ceiling
+ceiling leak,leak and pipe symptom,UK,DIRECTIONAL,/plumbing-problems/water-coming-through-ceiling
+wet patch on ceiling,leak and pipe symptom,UK,DIRECTIONAL,/plumbing-problems/water-coming-through-ceiling
+water stain ceiling plumbing,leak and pipe symptom,UK,DIRECTIONAL,/plumbing-problems/water-coming-through-ceiling
+ceiling leaking below bathroom,leak and pipe symptom,UK,DIRECTIONAL,/plumbing-problems/water-coming-through-ceiling
+overflow pipe leaking,leak and pipe symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+overflow pipe dripping,leak and pipe symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+water dripping from overflow pipe,leak and pipe symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+external overflow pipe leaking,leak and pipe symptom,UK,DIRECTIONAL,NEW_CANDIDATE
+flexi hose leaking,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+flexible tap connector leaking,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+stopcock leaking,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+isolation valve leaking,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+water leak under sink,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+water leaking under basin,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+water leak under kitchen sink,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+leaking waste pipe,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+leaking trap under sink,leak and pipe symptom,UK,DIRECTIONAL,/services/leak-repair
+leak repair Kensington London,leak and pipe symptom,Kensington,DIRECTIONAL,/services/leak-repair
+water coming through ceiling Kensington,leak and pipe symptom,Kensington,DIRECTIONAL,/plumbing-problems/water-coming-through-ceiling
+overflow pipe leaking Kensington,leak and pipe symptom,Kensington,DIRECTIONAL,NEW_CANDIDATE
+leaking pipe W8,leak and pipe symptom,W8,DIRECTIONAL,/services/leak-repair
+water leak under sink W8,leak and pipe symptom,W8,DIRECTIONAL,/services/leak-repair
+tap leaking from base,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+tap leaking under sink,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+tap hard to turn,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+tap won't turn off,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+tap low flow,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+one tap low pressure,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+mixer tap leaking,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+kitchen tap leaking,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+bathroom tap leaking,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+tap dripping when off,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+tap noisy when running,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+tap vibrating,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+tap stiff or loose,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+mixer tap low flow,tap symptom,UK,DIRECTIONAL,/services/tap-repair
+tap leaking from base Kensington,tap symptom,Kensington,DIRECTIONAL,/services/tap-repair
+tap hard to turn Kensington,tap symptom,Kensington,DIRECTIONAL,/services/tap-repair
+mixer tap leaking Kensington,tap symptom,Kensington,DIRECTIONAL,/services/tap-repair
+kitchen tap leaking Kensington,tap symptom,Kensington,DIRECTIONAL,/services/tap-repair
+tap leaking from base W8,tap symptom,W8,DIRECTIONAL,/services/tap-repair
+tap won't turn off W8,tap symptom,W8,DIRECTIONAL,/services/tap-repair
+shower going hot and cold,shower symptom,UK,DIRECTIONAL,/plumbing-problems/shower-going-hot-and-cold
+shower temperature fluctuating,shower symptom,UK,DIRECTIONAL,/plumbing-problems/shower-going-hot-and-cold
+shower hot then cold,shower symptom,UK,DIRECTIONAL,/plumbing-problems/shower-going-hot-and-cold
+shower low pressure,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower weak flow,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower leaking,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower leaking from hose,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower leaking from tray,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower dripping when off,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower drain slow,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower control problem,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower mixer leaking,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower pressure only low,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower not draining,shower symptom,UK,DIRECTIONAL,/services/shower-repair
+shower temperature fluctuating Kensington,shower symptom,Kensington,DIRECTIONAL,/plumbing-problems/shower-going-hot-and-cold
+shower leaking Kensington,shower symptom,Kensington,DIRECTIONAL,/services/shower-repair
+shower low pressure Kensington,shower symptom,Kensington,DIRECTIONAL,/services/shower-repair
+shower going hot and cold W8,shower symptom,W8,DIRECTIONAL,/plumbing-problems/shower-going-hot-and-cold
+shower leaking W8,shower symptom,W8,DIRECTIONAL,/services/shower-repair
+bathroom leak,bathroom and sink symptom,UK,DIRECTIONAL,/services/bathroom-plumbing
+basin leaking,bathroom and sink symptom,UK,DIRECTIONAL,/services/bathroom-plumbing
+bath leaking,bathroom and sink symptom,UK,DIRECTIONAL,/services/bathroom-plumbing
+bathroom pipe leaking,bathroom and sink symptom,UK,DIRECTIONAL,/services/bathroom-plumbing
+sink leaking underneath,bathroom and sink symptom,UK,DIRECTIONAL,/services/leak-repair
+basin draining slowly,bathroom and sink symptom,UK,DIRECTIONAL,SUPPORTING_TERM_ONLY
+sink not draining,bathroom and sink symptom,UK,DIRECTIONAL,SUPPORTING_TERM_ONLY
+bathroom leak Kensington,bathroom and sink symptom,Kensington,DIRECTIONAL,/services/bathroom-plumbing
+basin leaking Kensington,bathroom and sink symptom,Kensington,DIRECTIONAL,/services/bathroom-plumbing
+sink leaking W8,bathroom and sink symptom,W8,DIRECTIONAL,/services/leak-repair
+no water from tap,water supply symptom,UK,DIRECTIONAL,DO_NOT_TARGET
+low water pressure,water supply symptom,UK,DIRECTIONAL,DO_NOT_TARGET
+low water pressure one tap,water supply symptom,UK,DIRECTIONAL,/services/tap-repair
+low water pressure bathroom,water supply symptom,UK,DIRECTIONAL,DO_NOT_TARGET
+water pressure suddenly dropped,water supply symptom,UK,DIRECTIONAL,DO_NOT_TARGET
+no water from tap Kensington,water supply symptom,Kensington,DIRECTIONAL,DO_NOT_TARGET
+low water pressure Kensington,water supply symptom,Kensington,DIRECTIONAL,DO_NOT_TARGET
+low water pressure one tap Kensington,water supply symptom,Kensington,DIRECTIONAL,/services/tap-repair
+what to do if water comes through ceiling,advice,UK,DIRECTIONAL,/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling
+what to do with leaking pipe,advice,UK,DIRECTIONAL,/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling
+how to describe plumbing problem,advice,UK,DIRECTIONAL,/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry
+how to tell if toilet is blocked,advice,UK,DIRECTIONAL,/plumbing-advice/blocked-toilet-or-broken-flush
+blocked toilet or broken flush,advice,UK,DIRECTIONAL,/plumbing-advice/blocked-toilet-or-broken-flush
+why toilet won't flush,advice,UK,DIRECTIONAL,/plumbing-problems/toilet-wont-flush
+why toilet keeps running,advice,UK,DIRECTIONAL,/plumbing-problems/toilet-keeps-running
+why cistern won't fill,advice,UK,DIRECTIONAL,NEW_CANDIDATE
+why overflow pipe is leaking,advice,UK,DIRECTIONAL,NEW_CANDIDATE
+what is a stopcock,advice,UK,DIRECTIONAL,/plumbing-glossary
+stopcock vs isolation valve,advice,UK,DIRECTIONAL,/plumbing-glossary
+what is a cistern,advice,UK,DIRECTIONAL,/plumbing-glossary
+what is a toilet fill valve,advice,UK,DIRECTIONAL,/plumbing-glossary
+what is a waste pipe,advice,UK,DIRECTIONAL,/plumbing-glossary
+what is a soil pipe,advice,UK,DIRECTIONAL,/plumbing-glossary
+what is a trap,advice,UK,DIRECTIONAL,/plumbing-glossary
+what is a flexi hose,advice,UK,DIRECTIONAL,/plumbing-glossary
+what is a TRV,advice,UK,DIRECTIONAL,/plumbing-glossary
+water coming through ceiling advice,advice,UK,DIRECTIONAL,/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling
+toilet cistern advice,advice,UK,DIRECTIONAL,/services/toilet-repair
+plumber cost London,commercial investigation,London,DIRECTIONAL,RESEARCH_ONLY
+plumber hourly rate London,commercial investigation,London,DIRECTIONAL,RESEARCH_ONLY
+plumber call out charge,commercial investigation,UK,DIRECTIONAL,RESEARCH_ONLY
+blocked toilet cost,commercial investigation,UK,DIRECTIONAL,RESEARCH_ONLY
+tap repair cost,commercial investigation,UK,DIRECTIONAL,RESEARCH_ONLY
+toilet repair cost,commercial investigation,UK,DIRECTIONAL,RESEARCH_ONLY
+leak repair cost,commercial investigation,UK,DIRECTIONAL,RESEARCH_ONLY
+emergency plumber cost,commercial investigation,UK,DIRECTIONAL,RESEARCH_ONLY
+plumber South Kensington,area research,South Kensington,DIRECTIONAL,NOT_AUTHORISED
+emergency plumber South Kensington,area research,South Kensington,DIRECTIONAL,NOT_AUTHORISED
+leak repair South Kensington,area research,South Kensington,DIRECTIONAL,NOT_AUTHORISED
+blocked toilet South Kensington,area research,South Kensington,DIRECTIONAL,NOT_AUTHORISED
+toilet repair South Kensington,area research,South Kensington,DIRECTIONAL,NOT_AUTHORISED
+tap repair South Kensington,area research,South Kensington,DIRECTIONAL,NOT_AUTHORISED
+shower repair South Kensington,area research,South Kensington,DIRECTIONAL,NOT_AUTHORISED
+bathroom plumber South Kensington,area research,South Kensington,DIRECTIONAL,NOT_AUTHORISED
+plumber West Kensington,area research,West Kensington,DIRECTIONAL,NOT_AUTHORISED
+emergency plumber West Kensington,area research,West Kensington,DIRECTIONAL,NOT_AUTHORISED
+leak repair West Kensington,area research,West Kensington,DIRECTIONAL,NOT_AUTHORISED
+blocked toilet West Kensington,area research,West Kensington,DIRECTIONAL,NOT_AUTHORISED
+toilet repair West Kensington,area research,West Kensington,DIRECTIONAL,NOT_AUTHORISED
+tap repair West Kensington,area research,West Kensington,DIRECTIONAL,NOT_AUTHORISED
+shower repair West Kensington,area research,West Kensington,DIRECTIONAL,NOT_AUTHORISED
+bathroom plumber West Kensington,area research,West Kensington,DIRECTIONAL,NOT_AUTHORISED
+plumber North Kensington,area research,North Kensington,DIRECTIONAL,NOT_AUTHORISED
+emergency plumber North Kensington,area research,North Kensington,DIRECTIONAL,NOT_AUTHORISED
+leak repair North Kensington,area research,North Kensington,DIRECTIONAL,NOT_AUTHORISED
+blocked toilet North Kensington,area research,North Kensington,DIRECTIONAL,NOT_AUTHORISED
+toilet repair North Kensington,area research,North Kensington,DIRECTIONAL,NOT_AUTHORISED
+tap repair North Kensington,area research,North Kensington,DIRECTIONAL,NOT_AUTHORISED
+shower repair North Kensington,area research,North Kensington,DIRECTIONAL,NOT_AUTHORISED
+bathroom plumber North Kensington,area research,North Kensington,DIRECTIONAL,NOT_AUTHORISED
+plumber Notting Hill,area research,Notting Hill,DIRECTIONAL,NOT_AUTHORISED
+emergency plumber Notting Hill,area research,Notting Hill,DIRECTIONAL,NOT_AUTHORISED
+leak repair Notting Hill,area research,Notting Hill,DIRECTIONAL,NOT_AUTHORISED
+blocked toilet Notting Hill,area research,Notting Hill,DIRECTIONAL,NOT_AUTHORISED
+toilet repair Notting Hill,area research,Notting Hill,DIRECTIONAL,NOT_AUTHORISED
+tap repair Notting Hill,area research,Notting Hill,DIRECTIONAL,NOT_AUTHORISED
+shower repair Notting Hill,area research,Notting Hill,DIRECTIONAL,NOT_AUTHORISED
+bathroom plumber Notting Hill,area research,Notting Hill,DIRECTIONAL,NOT_AUTHORISED
+plumber Holland Park,area research,Holland Park,DIRECTIONAL,NOT_AUTHORISED
+emergency plumber Holland Park,area research,Holland Park,DIRECTIONAL,NOT_AUTHORISED
+leak repair Holland Park,area research,Holland Park,DIRECTIONAL,NOT_AUTHORISED
+blocked toilet Holland Park,area research,Holland Park,DIRECTIONAL,NOT_AUTHORISED
+toilet repair Holland Park,area research,Holland Park,DIRECTIONAL,NOT_AUTHORISED
+tap repair Holland Park,area research,Holland Park,DIRECTIONAL,NOT_AUTHORISED
+shower repair Holland Park,area research,Holland Park,DIRECTIONAL,NOT_AUTHORISED
+bathroom plumber Holland Park,area research,Holland Park,DIRECTIONAL,NOT_AUTHORISED
+plumber Earl's Court,area research,Earl's Court,DIRECTIONAL,NOT_AUTHORISED
+emergency plumber Earl's Court,area research,Earl's Court,DIRECTIONAL,NOT_AUTHORISED
+leak repair Earl's Court,area research,Earl's Court,DIRECTIONAL,NOT_AUTHORISED
+blocked toilet Earl's Court,area research,Earl's Court,DIRECTIONAL,NOT_AUTHORISED
+toilet repair Earl's Court,area research,Earl's Court,DIRECTIONAL,NOT_AUTHORISED
+tap repair Earl's Court,area research,Earl's Court,DIRECTIONAL,NOT_AUTHORISED
+shower repair Earl's Court,area research,Earl's Court,DIRECTIONAL,NOT_AUTHORISED
+bathroom plumber Earl's Court,area research,Earl's Court,DIRECTIONAL,NOT_AUTHORISED

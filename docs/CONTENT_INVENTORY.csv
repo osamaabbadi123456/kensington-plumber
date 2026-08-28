@@ -1,7 +1,7 @@
 url_or_asset,type,title_or_role,status,indexable,source,notes
-/,route,Plumber Kensington,implemented,yes,app/page.tsx,"Header; Hero; ProblemSelector; ServicesPreview"
+/,route,Plumber Kensington,implemented,yes,app/page.tsx,"Header; Hero; seven service-detail cards; four problem-detail cards; visual/enquiry path; confirmed-area navigation"
 /_not-found,route,Not Found,implemented,no,app/not-found.tsx,Custom recovery page links to Home, Services and Plumbing Problems
-/services,route,Services,implemented,yes,app/services/page.tsx,Lightweight hub; individual service pages intentionally deferred
+/services,route,Services,implemented,yes,app/services/page.tsx,Seven detail cards plus three clearly labelled guidance destinations; no unbuilt service pages
 /services/emergency-plumber,service detail,Emergency plumber,implemented,yes,app/services/emergency-plumber/page.tsx,Distinct urgent-situation structure; no 24/7 or response-time claim
 /services/leak-repair,service detail,Leak repair,implemented,yes,app/services/leak-repair/page.tsx,Distinct location-and-damage-limitation structure
 /services/blocked-toilet,service detail,Blocked toilet,implemented,yes,app/services/blocked-toilet/page.tsx,Distinct symptom-and-wider-drainage structure
@@ -14,6 +14,7 @@ url_or_asset,type,title_or_role,status,indexable,source,notes
 /plumbing-problems/toilet-keeps-running,problem detail,Toilet keeps running,implemented,yes,app/plumbing-problems/toilet-keeps-running/page.tsx,Cistern and running-water symptom route
 /plumbing-problems/shower-going-hot-and-cold,problem detail,Shower going hot and cold,implemented,yes,app/plumbing-problems/shower-going-hot-and-cold/page.tsx,Shower temperature/pressure symptom route without boiler claims
 /plumbing-advice,route,Advice,implemented,yes,app/plumbing-advice/page.tsx,Practical guidance hub linking to the three advice pages
+/plumbing-glossary,route,Plumbing Glossary,implemented,yes,app/plumbing-glossary/page.tsx,Reviewed plain-English glossary with grouped term cards and links only to implemented routes
 /plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling,advice detail,Water coming through the ceiling advice,implemented,yes,app/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling/page.tsx,Answer-first safety and leak-enquiry guidance
 /plumbing-advice/blocked-toilet-or-broken-flush,advice detail,Blocked toilet or broken flush advice,implemented,yes,app/plumbing-advice/blocked-toilet-or-broken-flush/page.tsx,Blockage versus flush-fault decision guide
 /plumbing-advice/what-details-to-send-for-a-plumbing-enquiry,advice detail,Plumbing enquiry details guide,implemented,yes,app/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry/page.tsx,Checklist for clearer enquiry messages
@@ -21,8 +22,14 @@ url_or_asset,type,title_or_role,status,indexable,source,notes
 /services/water-pressure,deferred service detail,Water pressure,deferred,no,SEO_RESEARCH.md,Start as problem/advice content
 /services/commercial-plumbing,conditional service detail,Commercial plumbing,conditional,no,SEO_RESEARCH.md,Business lead scope requires confirmation
 /services/boiler-repair,research-only service detail,Boiler repair,research-only,no,SEO_RESEARCH.md,Do not publish until Gas Safe/business truth is verified
-/plumbing-problems,route,Plumbing Problems,implemented,yes,app/plumbing-problems/page.tsx,Symptom hub; individual problem pages intentionally deferred
-/areas,route,Areas,implemented,yes,app/areas/page.tsx,Confirmed Kensington/W8 scope only; no neighbouring area pages published without coverage confirmation
+/plumbing-problems,route,Plumbing Problems,implemented,yes,app/plumbing-problems/page.tsx,Four detail cards plus guidance/detail/enquiry destinations with controlled visual labels
+/areas,route,Areas,implemented,yes,app/areas/page.tsx,Kensington/W8 primary owner plus six confirmed-area learning routes and one guided enquiry CTA
+/areas/south-kensington,area route,South Kensington plumbing enquiries,implemented,yes,app/areas/south-kensington/page.tsx,Shared area-page system with unique SW7 room-and-fixture route and controlled enquiry prefill
+/areas/west-kensington,area route,West Kensington plumbing enquiries,implemented,yes,app/areas/west-kensington/page.tsx,Shared area-page system with unique W14 pipework/toilet route and controlled enquiry prefill
+/areas/earls-court,area route,Earl's Court plumbing enquiries,implemented,yes,app/areas/earls-court/page.tsx,Shared area-page system with unique SW5 water-visible-first route and controlled enquiry prefill
+/areas/notting-hill,area route,Notting Hill plumbing enquiries,implemented,yes,app/areas/notting-hill/page.tsx,Shared area-page system with unique W11 fitting-led route and controlled enquiry prefill
+/areas/north-kensington,area route,North Kensington plumbing enquiries,implemented,yes,app/areas/north-kensington/page.tsx,Shared area-page system with unique W10 symptom-choice route and controlled enquiry prefill
+/areas/holland-park,area route,Holland Park plumbing enquiries,implemented,yes,app/areas/holland-park/page.tsx,Shared area-page system with explicit W8/W11 boundary and controlled enquiry prefill
 /about,route,About,implemented,yes,app/about/page.tsx,Describes the enquiry/lead-generation model
 /contact,route,Contact,implemented,yes,app/contact/page.tsx,WhatsApp/email enquiry details and transparent Kensington/W8 routing copy
 app/layout.tsx,layout,Root layout and metadata,implemented,n/a,repository,"en-GB; canonical root; Open Graph; index/follow"
@@ -33,10 +40,11 @@ app/_components/MobileNav.tsx,client-component,Mobile navigation,implemented,n/a
 app/_components/ProblemSelector.tsx,component,Problem selector,implemented,n/a,repository,Homepage symptom cards route to implemented detail pages or the problem hub
 app/_components/ServicesPreview.tsx,component,Services preview,implemented,n/a,repository,Six cards link to the implemented services hub
 app/_components/WhatsAppIcon.tsx,component,WhatsApp SVG icon,implemented,n/a,repository,Local SVG
+app/_components/Footer.tsx,component,Site-wide footer,implemented,n/a,repository,Brand model navigation resources and confirmed WhatsApp/email contact only
 app/_data/siteConfig.ts,data,Site configuration,implemented,n/a,repository,Includes primary postcode intent W8
 app/_data/contentMap.ts,data,Planned content map,implemented,n/a,repository,Planning data does not create routes
 app/not-found.tsx,route,Custom not-found recovery,implemented,no,app/not-found.tsx,Links to three valid starting points
 app/robots.ts,metadata route,Robots directives,implemented,no,app/robots.ts,Allows public crawling and references the canonical sitemap
-app/sitemap.ts,metadata route,XML sitemap,implemented,no,app/sitemap.ts,Contains the 20 real canonical indexable routes with no invented last-modified data
+app/sitemap.ts,metadata route,XML sitemap,implemented,no,app/sitemap.ts,Contains the 22 real canonical indexable routes with no invented last-modified data
 app/_components/StructuredData.tsx,component,Safe JSON-LD helpers,implemented,n/a,repository,WebSite publisher; visible BreadcrumbList; Service; advice WebPage only
 scripts/check-contamination.mjs,script,Public-content city contamination check,implemented,n/a,repository,Checks app/content for Wolverhampton Camden and Brent

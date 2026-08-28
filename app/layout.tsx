@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "./_components/Footer";
+import MobileConversionDock from "./_components/MobileConversionDock";
 import { SiteStructuredData } from "./_components/StructuredData";
 import { siteConfig } from "./_data/siteConfig";
+import { isNetlifyPreview } from "./_lib/deployment";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
 
   title: {
-    default: "Plumber Kensington | Local Plumbing Enquiries",
+    default: "Plumber Kensington | Plumbing Enquiries in W8",
     template: "%s | Plumber Kensington",
   },
 
@@ -22,13 +25,13 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Plumber Kensington | Local Plumbing Enquiries",
+    title: "Plumber Kensington | Plumbing Enquiries in W8",
     description: siteConfig.description,
   },
 
   robots: {
-    index: true,
-    follow: true,
+    index: !isNetlifyPreview,
+    follow: !isNetlifyPreview,
   },
 };
 
@@ -42,6 +45,8 @@ export default function RootLayout({
       <body>
         <SiteStructuredData />
         {children}
+        <Footer />
+        <MobileConversionDock />
       </body>
     </html>
   );

@@ -1,5 +1,5 @@
 url,page_type,primary_intent,query_family,location,status,indexability,evidence_strength,overlap_notes,source_date
-/,home,primary local plumbing enquiry,plumber Kensington; local plumber Kensington,Kensington/W8,implemented,indexable,strong,Own primary local intent; do not duplicate with Areas,2026-08-23
+/,home,primary local plumbing enquiry,plumber Kensington; plumber W8; local plumber Kensington,Kensington/W8,implemented,indexable,strong,Final local-area review: homepage remains the only Kensington/W8 owner; no area or postcode alias,2026-08-27
 /services,hub,service discovery,plumbing services Kensington,Kensington/W8,implemented,indexable,strong,Hub links to verified detail pages,2026-08-23
 /services/emergency-plumber,service,urgent plumbing enquiry,emergency plumber Kensington; emergency plumber W8,Kensington/W8,implemented,indexable,strong,Own urgency; 24 hour is research-only,2026-08-23
 /services/leak-repair,service,leak and burst-pipe enquiry,leak repair Kensington; burst pipe Kensington,Kensington/W8,implemented,indexable,strong,One leak owner; link emergency context,2026-08-23
@@ -16,18 +16,19 @@ url,page_type,primary_intent,query_family,location,status,indexability,evidence_
 /plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling,advice,safety-first ceiling leak guidance,water coming through ceiling advice Kensington,Kensington/W8,implemented,indexable,moderate,Keep answer-first and link to leak/emergency problem routes,2026-08-24
 /plumbing-advice/blocked-toilet-or-broken-flush,advice,toilet triage guidance,blocked toilet or broken flush advice,Kensington/W8,implemented,indexable,moderate,Keep blockage vs flush-fault distinction clear,2026-08-24
 /plumbing-advice/what-details-to-send-for-a-plumbing-enquiry,advice,enquiry-detail guidance,what details to send plumbing enquiry,Kensington/W8,implemented,indexable,moderate,Checklist page for better enquiry messages,2026-08-24
+/plumbing-glossary,resource,plain-English plumbing terminology,plumbing glossary; plumbing terms,Kensington/W8,implemented,indexable,moderate,Resource page only; no individual term URLs or DIY repair sequences,2026-08-26
 /services/radiator-plumbing,service,water-based heating plumbing,radiator repair Kensington; central heating plumber Kensington,Kensington/W8,conditional,pending,Do not imply gas/boiler capability,2026-08-23
 /services/water-pressure,service,pressure diagnostic,water pressure plumber Kensington,Kensington/W8,deferred,pending,weak-moderate,Start as problem/advice content,2026-08-23
 /services/commercial-plumbing,service,commercial plumbing enquiry,commercial plumber Kensington,Kensington/W8,conditional,pending,"strong market / business scope pending",Keep distinct from domestic,2026-08-23
 /services/boiler-repair,service,boiler/gas repair,boiler repair Kensington,Kensington/W8,research-only,no,not publishable,Gas/business truth missing; official safety source needed,2026-08-23
 /robots.txt,technical-seo,crawl directives,robots and sitemap,Kensington/W8,implemented,not-indexable,verified,Public pages allowed; canonical sitemap referenced,2026-08-24
-/sitemap.xml,technical-seo,canonical URL discovery,sitemap,Kensington/W8,implemented,not-indexable,verified,20 real indexable canonical URLs only; no timestamps invented,2026-08-24
-/areas,hub,confirmed local scope,plumber Kensington; plumber W8,Kensington/W8,implemented,indexable,strong,Explains confirmed scope and routes to existing service/problem hubs; does not compete with homepage,2026-08-24
+/sitemap.xml,technical-seo,canonical URL discovery,sitemap,confirmed coverage,implemented,not-indexable,verified,31 real indexable canonical URLs only; no timestamps invented,2026-08-27
+/areas,hub,confirmed local scope,plumber Kensington; plumber W8,Kensington/W8,implemented,indexable,strong,Explains confirmed coverage and routes to local pages; homepage retains Kensington/W8 ownership,2026-08-27
 /areas/w8,area,postcode local intent,plumber W8,Kensington/W8,do-not-split,no,strong,Homepage owns Kensington/W8; no standalone postcode utility,2026-08-24
-/areas/south-kensington,area,local transactional,plumber South Kensington,South Kensington/SW7,research-later,no,strong,Separate SERP observed but scope is unconfirmed; prevent unsupported coverage claim,2026-08-24
-/areas/north-kensington,area,local transactional,plumber North Kensington,North Kensington/W10,research-later,no,moderate,Separate SERP observed but coverage is unconfirmed,2026-08-24
-/areas/west-kensington,area,local transactional,plumber West Kensington,West Kensington/W14,research-later,no,strong,Separate SERP observed but coverage is unconfirmed,2026-08-24
-/areas/earls-court,area,local transactional,plumber Earl's Court,Earl's Court/SW5,research-later,no,strong,Separate SERP observed but coverage is unconfirmed,2026-08-24
-/areas/holland-park,area,local transactional,plumber Holland Park,Holland Park/W11,research-later,no,moderate,Separate SERP observed but coverage is unconfirmed,2026-08-24
-/areas/notting-hill,area,local transactional,plumber Notting Hill,Notting Hill/W11,research-later,no,strong,Separate SERP observed but coverage is unconfirmed,2026-08-24
+/areas/south-kensington,area,local plumbing enquiry,plumber South Kensington,South Kensington/SW7,implemented,indexable,strong,Final score 92; own South Kensington only; homepage retains Kensington/W8,2026-08-27
+/areas/north-kensington,area,local plumbing enquiry,plumber North Kensington,North Kensington/W10,implemented,indexable,strong,Final score 88; own North Kensington only; do not target Ladbroke Grove or general Kensington,2026-08-27
+/areas/west-kensington,area,local plumbing enquiry,plumber West Kensington,West Kensington/W14,implemented,indexable,strong,Final score 91; own West Kensington only; no general Kensington target,2026-08-27
+/areas/earls-court,area,local plumbing enquiry,plumber Earl's Court,Earl's Court/SW5,implemented,indexable,strong,Final score 93; own Earl's Court only; no general Kensington target,2026-08-27
+/areas/holland-park,area,local plumbing enquiry,plumber Holland Park,Holland Park/W8-W11,implemented,indexable,strong,Final score 89; explicit W8/W11 boundary; do not duplicate homepage W8 intent,2026-08-27
+/areas/notting-hill,area,local plumbing enquiry,plumber Notting Hill,Notting Hill/W11,implemented,indexable,strong,Final score 93; own Notting Hill only; no general Kensington target,2026-08-27
 /contact,contact,plumbing enquiry contact,plumber Kensington contact; plumbing enquiry Kensington,Kensington/W8,implemented,indexable,moderate,Contact and routing information; does not compete with service or local-commercial intent,2026-08-24

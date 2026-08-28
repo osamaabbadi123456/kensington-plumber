@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "../_data/siteConfig";
 import { getWhatsAppUrl } from "../_lib/whatsapp";
+import BrandMark, { BrandWordmark } from "./BrandMark";
 import MobileNav from "./MobileNav";
 import WhatsAppIcon from "./WhatsAppIcon";
 
@@ -9,10 +10,8 @@ export default function Header() {
     <header className="site-header">
       <div className="site-shell header-inner">
         <Link href="/" className="brand" aria-label="Plumber Kensington home">
-          <span className="brand-mark">
-            <span>PK</span>
-          </span>
-
+          <BrandMark />
+          <BrandWordmark />
           <span className="brand-copy">
             <strong>Plumber Kensington</strong>
             <span>Local plumbing enquiries</span>
@@ -29,7 +28,7 @@ export default function Header() {
 
         <a
           className="header-cta"
-          aria-label="Send a plumbing enquiry on WhatsApp"
+          aria-label="WhatsApp enquiry — send a plumbing enquiry on WhatsApp"
           href={getWhatsAppUrl(
             "Hi, I have a plumbing problem in Kensington and would like to send an enquiry.",
           )}

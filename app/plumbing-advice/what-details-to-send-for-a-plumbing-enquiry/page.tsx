@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { Camera, ClipboardList, MapPin, MessageCircleQuestion, PhoneCall } from "lucide-react";
 import Header from "../../_components/Header";
+import ContentReviewed from "../../_components/ContentReviewed";
 import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "../../_components/ServicePrimitives";
 import { AdvicePageStructuredData } from "../../_components/StructuredData";
+import { getAdviceContentFreshness } from "../../_data/contentFreshness";
+
+const pagePath = "/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry";
+const contentFreshness = getAdviceContentFreshness(pagePath);
 
 export const metadata: Metadata = {
-  title: "What Details to Send for a Plumbing Enquiry",
-  description: "A simple checklist for location, fixture, photos and contact preferences so a Kensington plumbing enquiry is clearer.",
+  title: "How to Describe a Plumbing Problem",
+  description: "Use a simple checklist for location, fixture, timing and photos so a Kensington or W8 plumbing enquiry is clearer from the start.",
   alternates: { canonical: "/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry" },
 };
 
@@ -17,7 +22,8 @@ export default function PlumbingEnquiryDetailsPage() {
       <AdvicePageStructuredData
         name="What details to send for a plumbing enquiry"
         description="A simple checklist for location, fixture, photos and contact preferences so a Kensington plumbing enquiry is clearer."
-        path="/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry"
+        path={pagePath}
+        dateModified={contentFreshness.reviewedAt}
       />
       <main className="service-detail advice-detail">
         <section className="service-hero service-hero-cream">
@@ -29,6 +35,7 @@ export default function PlumbingEnquiryDetailsPage() {
                   <ClipboardList size={30} aria-hidden="true" />
                 </span>
                 <span className="section-kicker">Advice</span>
+                <ContentReviewed reviewedAt={contentFreshness.reviewedAt} />
                 <h1>What details should you send for a plumbing enquiry?</h1>
                 <p>
                   A short message with the room, the fixture, what changed and a photo is usually enough.
@@ -93,29 +100,15 @@ export default function PlumbingEnquiryDetailsPage() {
           </div>
         </ServiceSection>
 
-        <ServiceSection eyebrow="Related routes" title="Where to go after this">
+        <ServiceSection eyebrow="Useful next reading" title="Where to go after this">
           <RelatedLinks
-            links={[
-              {
-                href: "/services",
-                label: "Services",
-                description: "Browse the current plumbing service categories.",
-              },
-              {
-                href: "/plumbing-problems",
-                label: "Plumbing problems",
-                description: "Choose a symptom-led starting point if that is easier.",
-              },
-              {
-                href: "/plumbing-advice/blocked-toilet-or-broken-flush",
-                label: "Blocked toilet or broken flush",
-                description: "A guide for toilet-specific enquiry wording.",
-              },
-            ]}
+            pagePath={pagePath}
+            links={[]}
           />
         </ServiceSection>
 
         <EnquiryCTA
+          pagePath={pagePath}
           heading="Send the enquiry when the details are ready."
           detail="A clear location, one photo and a short description are usually enough to start the conversation."
           message="Hi, I want to send a plumbing enquiry in Kensington. The issue is..."
