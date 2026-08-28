@@ -51,11 +51,11 @@ Latest local review: 2026-08-27 (Asia/Amman).
 - Three advice routes now exist: `/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling`, `/plumbing-advice/blocked-toilet-or-broken-flush`, and `/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry`.
 - The Plumbing Advice hub now links directly to all three implemented advice pages; the remaining card is a general send-the-enquiry prompt.
 - `app/robots.ts` allows public crawling and references the canonical sitemap.
-- `app/sitemap.ts` maintains the 22 real canonical indexable routes without invented `lastModified` values.
+- `app/sitemap.ts` maintains the 31 real canonical indexable routes without invented `lastModified` values.
 - Reusable JSON-LD covers the WebSite and its publisher entity, visible BreadcrumbLists, the seven existing service pages, and the three advice WebPages. It deliberately omits LocalBusiness, address, reviews, ratings, hours, pricing, service-radius, accreditation and availability claims.
 - The metadata audit added route-level canonicals to the five indexable hubs that previously inherited the home canonical. All public indexable pages now have a unique title, description, H1 and canonical resolved through `https://plumberkensington.co.uk`.
 - A dependency-free `npm run check:contamination` script checks public `app`/`content` source for accidental Wolverhampton, Camden or Brent references.
-- `app/_data/publicRoutes.json` is the single source of truth for the 22 current indexable public routes and feeds `app/sitemap.ts`.
+- `app/_data/publicRoutes.json` is the single source of truth for the 31 current indexable public routes and feeds `app/sitemap.ts`.
 - Dependency-free QA scripts now audit static internal links, public business-contact consistency, the route/metadata/canonical/sitemap inventory, and TypeScript independently of the Next build.
 - `npm run verify` runs contamination, business, links, SEO, lint, type checking and one production build in that order.
 - `.github/workflows/quality.yml` runs `npm ci` and `npm run verify` for pull requests and pushes to `main`, without secrets, external APIs or deployment steps.
@@ -93,7 +93,7 @@ Latest local review: 2026-08-27 (Asia/Amman).
 - The homepage service preview now links implemented Leak Repair, Blocked Toilet, Bathroom Plumbing and Shower Repair cards directly to their matching detail pages; unbuilt cards still use the services hub.
 - No real content images are currently required for launch. `docs/IMAGE_PLAN.md` records only deliberate later candidates and safe implementation rules.
 - There is no launch-blocking image requirement; `docs/IMAGE_PLAN.md` remains a later enhancement plan and no images were added in the release-hygiene batch.
-- Lighthouse was unavailable locally: no installed Lighthouse CLI/package and no locally discoverable Chrome executable. No synthetic scores were recorded; see `reports/lighthouse/README.md`.
+- A local Lighthouse baseline is recorded with temporary tooling and Playwright Chromium; no permanent dependency was added. See `reports/lighthouse/README.md` and `reports/lighthouse/summary.md`.
 - Launch checklist reconciliation on 2026-08-25 marked evidence-backed research, W8 configuration, indexing controls, truth-safe enquiry copy, report-backed pre-launch QA and the authorised final diff review as complete. Live contact tests, deployed-host checks and owner approval remain open.
 - `kensington_codex_bootstrap/` was reviewed and removed on 2026-08-25. It contained only historical instructions, duplicate truth/docs and a superseded baseline script; no production source or unique current project data was deleted.
 - Deep pre-launch SEO research (2026-08-27) now records a 249-query universe, 53 observed organic-result entries across 43 priority SERPs, canonical intent clusters, scored opportunity profiles, competitor patterns, current-page gaps, CTR/title hypotheses, visual briefs, area controls, and earned-link research. It is strategy only: no public route, page body, image, metadata, canonical, price, or coverage claim changed.
@@ -104,9 +104,9 @@ Latest local review: 2026-08-27 (Asia/Amman).
 - The approved PK icon now supplies `app/favicon.ico` (16/32/64px), `app/icon.png` (512px) and `app/apple-icon.png` (180px). The owner-supplied wide brand is the static Open Graph and Twitter image. No image is launch-blocking beyond these safely integrated brand assets; `docs/IMAGE_PLAN.md` and `docs/IMAGE_PLAN_V2.md` remain enhancement references.
 - Three factual legal-information routes now exist: `/privacy`, `/terms` and `/cookies`. They explain the current enquiry-routing model, third-party contact channels and the absence of application analytics/advertising scripts without inventing a controller, address, retention period or compliance position.
 - The shared footer now has named Privacy, Terms and Cookies links. Smoke coverage checks those destinations alongside the existing contact routes.
-- A Netlify-only preview guard now marks non-production contexts as `noindex, nofollow` and returns disallow-all robots rules. Production indexing, sitemap discovery and canonical host behaviour remain unchanged.
+- A Netlify preview guard now marks every Netlify deployment `noindex, nofollow` and returns disallow-all robots rules until the owner-controlled `NETLIFY_PUBLIC_INDEXING=true` launch variable is set. Canonicals remain on the public domain.
 - The global reduced-motion preference now also shortens CSS animations and transitions and disables smooth scrolling. This is a targeted safeguard, not a WCAG certification.
-- `reports/OWNER_REAL_DEVICE_TEST.md` records the twelve owner-only phone/mailbox checks as OWNER PENDING. `reports/lighthouse/README.md` records the attempted local audit constraint: Playwright Chromium is installed, but Lighthouse itself is not.
+- `reports/OWNER_REAL_DEVICE_TEST.md` records the twelve owner-only phone/mailbox checks as OWNER PENDING. `reports/lighthouse/README.md` records the local baseline and its production-host limitation.
 - Six confirmed-area pages now exist for South Kensington, West Kensington, Earl's Court, Notting Hill, North Kensington and Holland Park. Their local intents are separate from the homepage's Kensington/W8 owner, and their unique page briefs, similarity review and cannibalisation controls are recorded in `reports/area-page-uniqueness-audit.md` and `reports/area-page-cannibalisation-check.md`.
 - The Areas hub and homepage now send confirmed neighbouring-area cards to learning pages rather than straight to Contact. Each area page has its own controlled location-prefilled enquiry action.
 - The Services and Plumbing Problems hubs now use stable existing-page anchors for pipework, basin/sink, low-flow/water-pressure and radiator/heating enquiry context. No pipe-repair or low-water-pressure SEO page was created.
@@ -160,14 +160,14 @@ Latest local review: 2026-08-27 (Asia/Amman).
 - W8 is stored centrally as `siteConfig.location.primaryPostcode`.
 - Source checks still cannot evaluate every dynamic expression, redirect chain or production-host behaviour. Browser smoke coverage is intentionally compact: it is Chromium-only, does not test external WhatsApp/email delivery, and is not a full accessibility audit or measured performance score. Further service/problem/article pages and any unapproved area pages remain intentionally deferred.
 - Confirmed nearby coverage is controlled centrally in `app/_data/areaCoverage.ts`; it authorises only the six implemented area learning pages and does not authorise local-office wording or coverage outside the approved list.
-- A local Lighthouse score is not available yet. Any future performance measurement must use a repeatable local or deployed production audit rather than an invented score.
+- The local Lighthouse baseline is not a production-host measurement. Any production decision still requires a repeatable authorised preview/live audit.
 - Nearby London district names in Builder V3 are enquiry-location inputs. Only the six owner-confirmed areas may also appear as public coverage claims or dedicated area pages; no other location may be expanded without separate owner confirmation and research.
 - The published advice freshness system currently covers exactly three manually reviewed advice guides. It is not an automatic publishing-date system.
 - Pricing evidence is heterogeneous across UK cost guides and London provider rate pages. It remains unsuitable for public price claims until an owner-approved editorial review.
 - Keyword volume and Search Console data remain unavailable locally. This batch's prioritisation is directional SERP evidence, not a traffic forecast.
 - `cistern not filling` and `overflow pipe leaking` are research candidates only. They need distinct Search Console evidence and an owner-approved intent brief before any new URL is considered; `pipe repair` remains a supporting Leak Repair topic.
 - A local Lighthouse baseline is now recorded, but a deployed preview/production-host audit is still required before a production decision. The temporary `npx` run did not add Lighthouse to the repository dependencies.
-- The confirmed-area implementation increases the current public canonical inventory from 25 to 31 routes. Its requested visual and browser-smoke checks are complete; Lighthouse remains a separate, owner-authorised production-preparation step.
+- The confirmed-area implementation increases the current public canonical inventory from 25 to 31 routes. Its requested visual and browser-smoke checks are complete; Lighthouse remains separate from fast verification and needs an authorised preview/live measurement before production.
 - No launch-blocking image is required. `docs/IMAGE_PLAN.md` and `docs/IMAGE_PLAN_V2.md` remain later enhancement plans; no image was added during the final local QA.
 
 ## Next safest implementation step

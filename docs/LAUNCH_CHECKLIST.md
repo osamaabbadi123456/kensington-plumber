@@ -23,7 +23,7 @@
 - [x] Add public business contact consistency audit: `npm run check:business` (2026-08-24)
 - [x] Add sitemap/robots handling for public canonical URLs (2026-08-24)
 - [x] Add truthful Privacy, Terms and Cookies routes with footer links and registered canonical URLs (2026-08-27)
-- [x] Add Netlify preview-only noindex/robots protection while retaining production indexing (source checked 2026-08-27; validate on an authorised preview later)
+- [x] Add a Netlify noindex/robots protection gate that remains active until owner-controlled public-indexing approval (source checked 2026-08-28; validate on the hosted preview)
 - [x] Add six owner-confirmed area learning pages while keeping Kensington/W8 on the homepage and preventing postcode doorway pages (2026-08-27)
 - [x] Replace default card-to-contact routes with relevant existing-page anchors for pipework, basin/sink, water-pressure and radiator/heating contexts (2026-08-27)
 - [x] Complete visual QA for the controlled 31-route area architecture at 390px, 768px and 1440px; route-level smoke coverage passed with 72 tests and 4 intentional viewport skips (2026-08-27)

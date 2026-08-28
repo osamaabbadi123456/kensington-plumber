@@ -17,7 +17,7 @@ Checked locally: 2026-08-28
 ## Completed foundations
 
 - Canonical metadata, `robots.ts`, `sitemap.ts` and safe structured data are implemented.
-- Non-production Netlify contexts are source-configured for `noindex, nofollow` and disallow-all `robots.txt`; production retains indexable canonical routes.
+- Netlify deployments are source-configured for `noindex, nofollow` and disallow-all `robots.txt` until the owner-controlled `NETLIFY_PUBLIC_INDEXING=true` launch variable is explicitly enabled. Canonicals remain on the public domain.
 - The footer has named Privacy, Terms and Cookies links, and the legal routes are in the sitemap, route audit and smoke suite.
 - Source QA covers contamination, business contact consistency, internal links, SEO route inventory, lint, TypeScript and production build.
 - Final local smoke result: 76 Chromium tests passed with 4 intentional cross-viewport skips, covering all 31 canonical routes, controlled area-prefilled enquiry actions, routing anchors, legal routes and the reduced-motion safeguard at desktop and 390px mobile. The local smoke wrapper uses dedicated port 3401 and closes only its own production-server child after the run.
