@@ -11,7 +11,7 @@ const contentFreshness = getAdviceContentFreshness(pagePath);
 
 export const metadata: Metadata = {
   title: "Blocked Toilet or Broken Flush?",
-  description: "Learn the difference between a blocked toilet and a flush or cistern fault, then choose the right next step for a Kensington or W8 enquiry.",
+  description: "Compare rising water and slow clearing with flush and cistern faults, then choose the most useful next step for a toilet problem.",
   alternates: { canonical: "/plumbing-advice/blocked-toilet-or-broken-flush" },
 };
 

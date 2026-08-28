@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "Plumber Kensington",
 
   description:
-    "A local plumbing enquiry website for Kensington, helping people describe plumbing problems and send a clear enquiry.",
+    "Need help with a leak, blocked toilet, faulty tap or shower in Kensington? Find the right route and send clear details by WhatsApp or email.",
 
   url: "https://plumberkensington.co.uk",
 

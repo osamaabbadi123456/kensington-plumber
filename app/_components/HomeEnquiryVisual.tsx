@@ -1,4 +1,5 @@
 import VisualAsset from "./VisualAsset";
+import Link from "next/link";
 
 export default function HomeEnquiryVisual() {
   return (
@@ -10,6 +11,7 @@ export default function HomeEnquiryVisual() {
           <p>
             Start with the room, the fixture and what you can see. A photo can help when it is safe to take one.
           </p>
+          <Link className="primary-button" href="/contact#build-enquiry">Build a guided enquiry</Link>
         </div>
         <VisualAsset
           alt="Illustrated steps for describing a plumbing enquiry: room, fixture, symptom, photo and enquiry"

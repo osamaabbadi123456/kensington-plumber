@@ -5,8 +5,8 @@ import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "..
 import { ServiceStructuredData } from "../../_components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Bathroom Plumbing in Kensington",
-  description: "Describe a basin, bath, shower, toilet or bathroom leak issue in Kensington or W8, starting with the affected room and fixture.",
+  title: "Bathroom Plumbing Kensington | Basins, Toilets, Baths & Showers",
+  description: "Bathroom plumbing problem in Kensington? Start with the basin, bath, shower, toilet or visible leak, then send the room and fixture details.",
   alternates: { canonical: "/services/bathroom-plumbing" },
 };
 

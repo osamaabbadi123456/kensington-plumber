@@ -6,8 +6,8 @@ import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "..
 import { ServiceStructuredData } from "../../_components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Blocked Toilet in Kensington",
-  description: "For a slow, rising or recurring blocked toilet in Kensington or W8: identify the symptom and send the details that help explain it.",
+  title: "Blocked Toilet Kensington | Rising or Slow-Clearing Toilet",
+  description: "Blocked toilet in Kensington? Compare rising water, slow clearing and flush faults, then choose the right next step and send the details.",
   alternates: { canonical: "/services/blocked-toilet" },
 };
 

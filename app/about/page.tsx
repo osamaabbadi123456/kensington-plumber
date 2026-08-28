@@ -5,8 +5,8 @@ import { getWhatsAppUrl } from "../_lib/whatsapp";
 import Header from "../_components/Header";
 
 export const metadata: Metadata = {
-  title: "How This Enquiry Website Works",
-  description: "Learn how Plumber Kensington helps visitors describe a plumbing issue and send a clear enquiry for a confirmed covered area.",
+  title: "About Plumber Kensington | How the Site Helps",
+  description: "Learn how Plumber Kensington helps you choose a useful plumbing route and send the room, fixture and symptom details that matter.",
   alternates: { canonical: "/about" },
 };
 

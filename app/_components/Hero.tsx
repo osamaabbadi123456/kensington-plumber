@@ -21,7 +21,7 @@ export default function Hero() {
           <h1>Plumbing problem in Kensington?<span> Build a clearer enquiry.</span></h1>
           <p className="hero-lead">Tell us where the problem is, what is happening and how urgent it feels. A short guided message helps you send the useful details from the start.</p>
           <div className="hero-actions">
-            <a href="#enquiry-builder" className="primary-button"><ClipboardPenLine size={19} aria-hidden="true" />Build your enquiry<ArrowRight size={18} aria-hidden="true" /></a>
+            <a href="/contact#build-enquiry" className="primary-button"><ClipboardPenLine size={19} aria-hidden="true" />Build your enquiry<ArrowRight size={18} aria-hidden="true" /></a>
             <a aria-label="Send details now on WhatsApp" href={getWhatsAppUrl("Hi, I have a plumbing problem in Kensington. I can describe the issue and send a photo.")} className="secondary-button" target="_blank" rel="noopener noreferrer"><MessageCircle size={19} aria-hidden="true" />Send details now</a>
           </div>
           <div className="hero-points">

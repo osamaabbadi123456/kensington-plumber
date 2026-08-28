@@ -129,3 +129,11 @@ Hubs must label route destinations consistently: dedicated routes use `View serv
 ## D028 — Netlify preview indexing gate
 
 Netlify’s `CONTEXT=production` identifies a main-branch build, not owner approval for the `netlify.app` hostname to be indexed. All Netlify deployments therefore remain noindex by default. Indexing can be enabled only through the owner-controlled `NETLIFY_PUBLIC_INDEXING=true` build variable after the public launch and canonical-domain approval. This keeps preview canonicals on `https://plumberkensington.co.uk` while preventing preview indexing.
+
+## D029 — Radiator and heating plumbing boundary
+
+One `/services/radiator-heating` route owns radiator leaks, visible valves/pipework and user-observable uneven-heating symptoms because that Kensington intent is distinct enough to deserve a useful page. It must not broaden into boiler, gas, combustion, certification, installation, price, availability or Gas Safe claims. The route remains a plumbing-context and enquiry-details page until separate credentials and service evidence are approved.
+
+## D030 — SERP copy and homepage conversion path
+
+Google-facing titles and descriptions should lead with the plumbing problem, service and location rather than repeatedly leading with the lead-generation model. Transparent routing language remains in visible journey and legal content where it is useful. The homepage begins with the visible symptom, then service choices, and sends guided actions to the Contact builder so the interactive form remains available without being part of the initial homepage client workload.

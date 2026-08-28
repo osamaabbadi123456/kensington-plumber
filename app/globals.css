@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 :root {
   --navy-950: #07111f;
   --navy-900: #0b1728;
@@ -659,6 +657,9 @@ body {
 .area-detail-hero p { max-width: 760px; margin: 0; color: rgba(255,255,255,0.74); font-size: 18px; line-height: 1.7; }
 .area-detail-postcode { max-width: 760px; display: flex; align-items: flex-start; gap: 11px; margin-top: 26px; padding: 15px 17px; border: 1px solid rgba(255,255,255,0.13); border-radius: 16px; color: rgba(255,255,255,0.86); background: rgba(255,255,255,0.06); font-size: 14px; line-height: 1.55; }
 .area-detail-postcode svg { flex: 0 0 auto; color: #e2c89e; }
+.area-detail-identity { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 22px 0 0; padding: 8px 11px 8px 9px; border: 1px solid rgba(226,200,158,0.36); border-radius: 999px; background: rgba(226,200,158,0.08); color: rgba(255,255,255,0.86); font-size: 13px; font-weight: 750; }
+.area-detail-identity svg { color: #e2c89e; }
+.area-detail-identity strong { padding: 4px 8px; border-radius: 999px; background: #e2c89e; color: var(--navy-950); font-size: 12px; letter-spacing: 0.04em; }
 .area-detail-angle { padding: 64px 0; background: #f3e9dc; }
 .area-detail-angle-layout { display: grid; grid-template-columns: 58px minmax(0, 760px); gap: 19px; align-items: start; }
 .area-detail-angle-layout > svg { color: var(--burgundy-700); }
@@ -702,6 +703,26 @@ body {
 .hub-depth-enquiry { border-color: transparent; background: var(--navy-900); color: white; }
 .hub-depth-enquiry > svg, .hub-depth-enquiry > span { color: #e2c89e; }
 .hub-depth-enquiry p { color: rgba(255,255,255,0.72); }
+.radiator-hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(230px, 0.48fr); gap: 36px; align-items: end; }
+.radiator-hero-prompt { display: grid; gap: 10px; padding: 22px; border: 1px solid rgba(23,32,51,0.12); border-radius: 20px; background: rgba(255,255,255,0.7); font-weight: 800; }
+.radiator-hero-prompt span { display: flex; align-items: center; gap: 9px; }
+.radiator-hero-prompt span::before { width: 9px; height: 9px; border-radius: 50%; background: var(--burgundy-700); content: ""; }
+.radiator-symptom-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 15px; }
+.radiator-symptom-grid article { padding: 22px; border: 1px solid rgba(23,32,51,0.1); border-radius: 20px; background: #faf8f4; }
+.radiator-symptom-grid svg, .radiator-details-grid svg { color: var(--burgundy-700); }
+.radiator-symptom-grid h3, .radiator-details-grid h3 { margin: 14px 0 8px; font-size: 19px; letter-spacing: -0.03em; }
+.radiator-symptom-grid p, .radiator-details-grid p { margin: 0; color: var(--text-muted); line-height: 1.6; }
+.radiator-decision-section { padding: 74px 0; background: var(--navy-900); color: white; }
+.radiator-decision-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr); gap: 48px; align-items: center; }
+.radiator-decision-layout h2 { max-width: 600px; margin: 10px 0 14px; font-size: clamp(29px, 4vw, 43px); letter-spacing: -0.045em; line-height: 1.06; }
+.radiator-decision-layout p { max-width: 690px; margin: 0; color: rgba(255,255,255,0.75); line-height: 1.7; }
+.radiator-decision-layout ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.radiator-decision-layout li { padding: 18px; border: 1px solid rgba(255,255,255,0.14); border-radius: 17px; background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.84); line-height: 1.55; }
+.radiator-decision-layout strong { color: #e2c89e; }
+.radiator-details-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.7fr); gap: 42px; align-items: start; }
+.radiator-details-grid > div { padding: 23px; border-radius: 20px; background: white; }
+.radiator-details-grid ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.radiator-details-grid li { padding: 13px 0; border-bottom: 1px solid rgba(23,32,51,0.13); font-weight: 700; line-height: 1.45; }
 
 #pipework,
 #basin-sink,
@@ -715,8 +736,8 @@ body {
 .pipework-guide ul { display: grid; gap: 10px; margin: 0; padding-left: 21px; color: var(--text-muted); line-height: 1.55; }
 
 @media (max-width: 900px) {
-  .area-route-cards, .hub-depth-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .area-detail-details-layout, .pipework-guide { grid-template-columns: 1fr; gap: 28px; }
+  .area-route-cards, .hub-depth-grid, .radiator-symptom-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .area-detail-details-layout, .pipework-guide, .radiator-hero-layout, .radiator-decision-layout, .radiator-details-grid { grid-template-columns: 1fr; gap: 28px; }
   .area-detail-cta-inner { grid-template-columns: 1fr; align-items: start; }
 }
 
@@ -727,7 +748,7 @@ body {
   .area-detail-hero p { font-size: 16px; }
   .area-detail-angle, .area-detail-section, .area-detail-related, .area-detail-cta { padding: 56px 0; }
   .area-detail-angle-layout { grid-template-columns: 1fr; gap: 14px; }
-  .area-route-cards, .hub-depth-grid { grid-template-columns: 1fr; }
+  .area-route-cards, .hub-depth-grid, .radiator-symptom-grid { grid-template-columns: 1fr; }
   .area-route-card { min-height: 0; }
   .area-detail-cta { padding-bottom: 108px; }
   .area-detail-cta-inner { padding: 24px; }
@@ -3301,3 +3322,4 @@ a.hub-card:hover {
     overflow-y: auto;
   }
 }
+@import "tailwindcss";

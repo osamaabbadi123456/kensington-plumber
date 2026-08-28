@@ -5,8 +5,8 @@ import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "..
 import { ServiceStructuredData } from "../../_components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Emergency Plumbing in Kensington",
-  description: "For urgent plumbing situations in Kensington or W8: see safe first steps, then send the location, visible problem and useful details.",
+  title: "Emergency Plumber Kensington | Urgent Plumbing Problems",
+  description: "Water spreading, a failed fitting or a toilet problem in Kensington? Start with safe steps, then send the room, symptom and useful photos.",
   alternates: { canonical: "/services/emergency-plumber" },
 };
 

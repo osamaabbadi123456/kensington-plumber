@@ -5,6 +5,7 @@ import {
   Bath,
   Droplets,
   ShowerHead,
+  Heater,
   Toilet,
   Wrench,
 } from "lucide-react";
@@ -58,6 +59,13 @@ const services = [
       "For shower pressure, leaks, drainage and temperature-related plumbing.",
     href: "/services/shower-repair",
     icon: ShowerHead,
+  },
+  {
+    title: "Radiator & Heating",
+    description:
+      "For radiator leaks, visible valves, pipework and uneven heating symptoms.",
+    href: "/services/radiator-heating",
+    icon: Heater,
   },
 ];
 

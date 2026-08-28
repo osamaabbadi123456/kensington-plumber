@@ -3,7 +3,7 @@ import { AlertTriangle, Camera, Droplets, Gauge, ShowerHead, Thermometer, Wrench
 import Header from "../../_components/Header";
 import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "../../_components/ServicePrimitives";
 
-export const metadata: Metadata = { title: "Shower Going Hot and Cold", description: "For a shower that changes temperature in Kensington or W8, describe the pattern, flow and visible fitting symptoms before sending an enquiry.", alternates: { canonical: "/plumbing-problems/shower-going-hot-and-cold" } };
+export const metadata: Metadata = { title: "Shower Going Hot and Cold | Temperature & Flow", description: "Shower temperature changing in Kensington? Describe the pattern, flow and any visible fitting symptoms to choose the most relevant plumbing route.", alternates: { canonical: "/plumbing-problems/shower-going-hot-and-cold" } };
 
 export default function ShowerGoingHotAndColdPage() {
   return <><Header /><main className="problem-detail shower-temperature-problem">

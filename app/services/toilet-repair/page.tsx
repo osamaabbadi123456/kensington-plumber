@@ -6,8 +6,8 @@ import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "..
 import { ServiceStructuredData } from "../../_components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Toilet Repair in Kensington",
-  description: "Describe a toilet flush, cistern, running-water or visible toilet leak fault in Kensington or W8, distinct from a blockage.",
+  title: "Toilet Repair Kensington | Flush & Cistern Faults",
+  description: "Toilet not flushing, running or filling properly in Kensington? See the signs of a flush or cistern fault and send clear details.",
   alternates: { canonical: "/services/toilet-repair" },
 };
 

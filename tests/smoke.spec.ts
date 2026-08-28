@@ -5,6 +5,7 @@ const publicRoutes = [
   "/services",
   "/services/leak-repair",
   "/services/toilet-repair",
+  "/services/radiator-heating",
   "/plumbing-problems/water-coming-through-ceiling",
   "/plumbing-problems/toilet-wont-flush",
   "/plumbing-advice/blocked-toilet-or-broken-flush",
@@ -71,9 +72,9 @@ test("contact methods use the confirmed WhatsApp and email details", async ({ pa
 });
 
 test("enquiry builder supports expanded locations and an other-area note", async ({ page }) => {
-  await page.goto("/", { waitUntil: "networkidle" });
+  await page.goto("/contact", { waitUntil: "networkidle" });
 
-  const builder = page.locator("#enquiry-builder");
+  const builder = page.locator("#build-enquiry");
   const locationSelect = builder.locator("select").first();
   const locations = await locationSelect.locator("option").allTextContents();
 
@@ -96,9 +97,9 @@ test("enquiry builder supports expanded locations and an other-area note", async
 });
 
 test("enquiry builder creates a structured WhatsApp message", async ({ page }) => {
-  await page.goto("/", { waitUntil: "networkidle" });
+  await page.goto("/contact", { waitUntil: "networkidle" });
 
-  const builder = page.locator("#enquiry-builder");
+  const builder = page.locator("#build-enquiry");
   const selects = builder.locator("select");
   await selects.nth(1).selectOption({ label: "Leak / water leak" });
   await selects.nth(2).selectOption({ label: "Bathroom" });
@@ -115,6 +116,11 @@ test("enquiry builder creates a structured WhatsApp message", async ({ page }) =
   expect(decodeURIComponent(text)).toContain("What I can see: Yes");
   expect(decodeURIComponent(text)).toContain("Urgency: Urgent / active water problem");
   expect(decodeURIComponent(text)).toContain("Water is appearing through the ceiling.");
+});
+
+test("homepage routes guided enquiries to the contact builder", async ({ page }) => {
+  await page.goto("/", { waitUntil: "networkidle" });
+  await expect(page.getByRole("link", { name: "Build a guided enquiry" })).toHaveAttribute("href", "/contact#build-enquiry");
 });
 
 test("reviewed advice pages show their current review date", async ({ page }) => {
@@ -232,7 +238,7 @@ test("hub cards and covered-area cards use real routes or controlled enquiry lin
 
   await page.goto("/services", { waitUntil: "networkidle" });
   await expect(page.getByRole("link", { name: /Pipework and visible fittings/ })).toHaveAttribute("href", "/services/leak-repair#pipework");
-  await expect(page.getByRole("link", { name: /Radiator or heating plumbing enquiry/ })).toHaveAttribute("href", "/services#radiator-heating");
+  await expect(page.getByRole("link", { name: /Radiator and heating plumbing/ })).toHaveAttribute("href", "/services/radiator-heating");
 
   await page.goto("/plumbing-problems", { waitUntil: "networkidle" });
   await expect(page.getByRole("link", { name: /Water pressure/ })).toHaveAttribute("href", "/plumbing-problems#water-pressure");
@@ -241,10 +247,10 @@ test("hub cards and covered-area cards use real routes or controlled enquiry lin
 
 test("service and problem hubs clearly distinguish detail, guidance and enquiry destinations", async ({ page }) => {
   await page.goto("/services", { waitUntil: "networkidle" });
-  await expect(page.locator(".hub-card-detail")).toHaveCount(7);
-  await expect(page.locator(".hub-card-detail").getByText("View service", { exact: true })).toHaveCount(7);
-  await expect(page.locator(".hub-depth-guidance")).toHaveCount(3);
-  await expect(page.locator(".hub-depth-guidance").getByText("Read guidance", { exact: true })).toHaveCount(3);
+  await expect(page.locator(".hub-card-detail")).toHaveCount(8);
+  await expect(page.locator(".hub-card-detail").getByText("View service", { exact: true })).toHaveCount(8);
+  await expect(page.locator(".hub-depth-guidance")).toHaveCount(2);
+  await expect(page.locator(".hub-depth-guidance").getByText("Read guidance", { exact: true })).toHaveCount(2);
 
   await page.goto("/plumbing-problems", { waitUntil: "networkidle" });
   await expect(page.locator(".hub-card-detail")).toHaveCount(4);
@@ -258,7 +264,7 @@ test("routing anchors are visible below the fixed header and above the mobile do
     ["/services/leak-repair#pipework", "#pipework"],
     ["/services/bathroom-plumbing#basin-sink", "#basin-sink"],
     ["/plumbing-problems#water-pressure", "#water-pressure"],
-    ["/services#radiator-heating", "#radiator-heating"],
+    ["/services/radiator-heating#radiator-heating", "#radiator-heating"],
     ["/contact#build-enquiry", "#build-enquiry"],
   ] as const;
 
@@ -297,7 +303,7 @@ test("area pages use controlled location-prefilled enquiry actions", async ({ pa
   for (const [route, location] of routes) {
     await page.goto(route, { waitUntil: "networkidle" });
     await expect(page.locator(".area-detail-cta").getByRole("link", { name: /^Build enquiry/ })).toHaveAttribute("href", `/contact?location=${location}#build-enquiry`);
-    await expect(page.locator(".area-route-card")).toHaveCount(5);
+    await expect(page.locator(".area-route-card")).toHaveCount(4);
   }
 });
 

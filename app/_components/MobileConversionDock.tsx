@@ -9,7 +9,7 @@ import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function MobileConversionDock() {
   const pathname = usePathname() ?? "/";
-  const builderHref = pathname === "/" ? "#enquiry-builder" : getEnquiryBuilderHref(pathname);
+  const builderHref = getEnquiryBuilderHref(pathname);
 
   return (
     <nav className="mobile-conversion-dock" aria-label="Quick enquiry actions">

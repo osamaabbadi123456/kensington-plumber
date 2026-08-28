@@ -4,8 +4,8 @@ import HubPage from "../_components/HubPage";
 import { getContactProblemHref } from "../_data/internalLinks";
 
 export const metadata: Metadata = {
-  title: "Plumbing Advice: Clear Next Steps",
-  description: "Practical, safety-first plumbing advice to help identify a problem, avoid obvious risks and send a clearer Kensington or W8 enquiry.",
+  title: "Plumbing Advice Kensington | Clear, Safe Next Steps",
+  description: "Practical plumbing advice for leaks, toilets and clear problem details in Kensington, with safety-first steps and useful routes to explore.",
   alternates: { canonical: "/plumbing-advice" },
 };
 

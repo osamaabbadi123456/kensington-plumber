@@ -5,8 +5,8 @@ import HubPage from "../_components/HubPage";
 import { getContactProblemHref } from "../_data/internalLinks";
 
 export const metadata: Metadata = {
-  title: "Plumbing Problems in Kensington",
-  description: "Start with the plumbing symptom you can see in Kensington or W8, then find the relevant service route and enquiry details.",
+  title: "Plumbing Problems Kensington | Find the Right Next Step",
+  description: "See a leak, toilet fault, blocked toilet or shower problem in Kensington? Start with the symptom and choose a useful next step.",
   alternates: { canonical: "/plumbing-problems" },
 };
 

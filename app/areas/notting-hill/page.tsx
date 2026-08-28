@@ -3,8 +3,8 @@ import AreaPage from "../../_components/AreaPage";
 import { areaPages } from "../../_data/areaPages";
 
 export const metadata: Metadata = {
-  title: "Plumber in Notting Hill",
-  description: "For a Notting Hill plumbing enquiry, start with the tap, basin, bathroom or shower fitting you can see and send useful symptom details.",
+  title: "Plumber Notting Hill | Taps, Bathrooms & Showers",
+  description: "Need a plumber in Notting Hill? Start with the tap, basin, bathroom or shower fitting you can see, then send useful symptom details.",
   alternates: { canonical: "/areas/notting-hill" },
 };
 

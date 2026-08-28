@@ -3,7 +3,7 @@ import { AlertTriangle, Camera, Droplets, MapPin, Toilet, Wrench } from "lucide-
 import Header from "../../_components/Header";
 import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "../../_components/ServicePrimitives";
 
-export const metadata: Metadata = { title: "Toilet Won't Flush: Fault or Blockage?", description: "A toilet that will not flush in Kensington or W8 may be a flush or cistern fault, or a blockage. Compare the signs before sending an enquiry.", alternates: { canonical: "/plumbing-problems/toilet-wont-flush" } };
+export const metadata: Metadata = { title: "Toilet Won't Flush | Fault or Blockage?", description: "Toilet will not flush in Kensington? Compare a flush or cistern fault with signs of a blockage before choosing the right next step.", alternates: { canonical: "/plumbing-problems/toilet-wont-flush" } };
 
 export default function ToiletWontFlushPage() {
   return <><Header /><main className="problem-detail flush-problem">

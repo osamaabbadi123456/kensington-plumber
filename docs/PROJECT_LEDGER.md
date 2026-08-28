@@ -2,9 +2,9 @@
 
 ## Current stage
 
-Final pre-launch hardening: controlled six-area architecture, anchor-first routing, completed local QA and preview preparation.
+Final pre-production SEO and UX polish: production-indexing simulation, stronger SERP copy, controlled area identity and radiator/heating plumbing route.
 
-Latest local review: 2026-08-27 (Asia/Amman).
+Latest local review: 2026-08-28 (Asia/Amman).
 
 ## Confirmed project facts
 
@@ -51,11 +51,11 @@ Latest local review: 2026-08-27 (Asia/Amman).
 - Three advice routes now exist: `/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling`, `/plumbing-advice/blocked-toilet-or-broken-flush`, and `/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry`.
 - The Plumbing Advice hub now links directly to all three implemented advice pages; the remaining card is a general send-the-enquiry prompt.
 - `app/robots.ts` allows public crawling and references the canonical sitemap.
-- `app/sitemap.ts` maintains the 31 real canonical indexable routes without invented `lastModified` values.
+- `app/sitemap.ts` maintains the 32 real canonical indexable routes without invented `lastModified` values.
 - Reusable JSON-LD covers the WebSite and its publisher entity, visible BreadcrumbLists, the seven existing service pages, and the three advice WebPages. It deliberately omits LocalBusiness, address, reviews, ratings, hours, pricing, service-radius, accreditation and availability claims.
 - The metadata audit added route-level canonicals to the five indexable hubs that previously inherited the home canonical. All public indexable pages now have a unique title, description, H1 and canonical resolved through `https://plumberkensington.co.uk`.
 - A dependency-free `npm run check:contamination` script checks public `app`/`content` source for accidental Wolverhampton, Camden or Brent references.
-- `app/_data/publicRoutes.json` is the single source of truth for the 31 current indexable public routes and feeds `app/sitemap.ts`.
+- `app/_data/publicRoutes.json` is the single source of truth for the 32 current indexable public routes and feeds `app/sitemap.ts`.
 - Dependency-free QA scripts now audit static internal links, public business-contact consistency, the route/metadata/canonical/sitemap inventory, and TypeScript independently of the Next build.
 - `npm run verify` runs contamination, business, links, SEO, lint, type checking and one production build in that order.
 - `.github/workflows/quality.yml` runs `npm ci` and `npm run verify` for pull requests and pushes to `main`, without secrets, external APIs or deployment steps.
@@ -172,4 +172,13 @@ Latest local review: 2026-08-27 (Asia/Amman).
 
 ## Next safest implementation step
 
-Next safest step: complete the authorised GitHub/Netlify preview release checks, then have the owner inspect the preview and complete real-device contact checks before any production decision. No production publication is authorised.
+Next safest step: owner review of the local final polish, then real-device WhatsApp/email checks before any separate production decision. No push, deployment, DNS or preview-indexing change is authorised by this batch.
+
+## Final polish note — 2026-08-28
+
+- Production-indexing simulation uses `NETLIFY=true`, `CONTEXT=production` and owner-controlled `NETLIFY_PUBLIC_INDEXING=true`; it returned index/follow metadata, canonical-domain robots rules and a 32-route sitemap. The protected Netlify preview remains `noindex, nofollow` by design.
+- `/services/radiator-heating` now owns radiator leaks, visible valves/pipework and user-observable uneven heating. It explicitly excludes gas and boiler diagnosis, repair, installation and certification claims while credentials remain unverified.
+- The homepage now begins with symptoms before service discovery and sends the guided action to the full Contact builder, reducing initial homepage client work without removing the builder itself.
+- Six area pages have a postcode-led covered-area identity treatment and four deliberate service/problem routes each; their distinct decision sections remain unchanged.
+- Final local verification: `npm run verify` passed for 32 canonical routes and `npm run test:smoke` passed with 80 Chromium tests and four intentional cross-viewport skips. The 3401 smoke-test server was closed after the run.
+- Mobile performance stabilisation: five production-mode local Lighthouse runs found a text-H1 LCP dominated by main-thread render delay, not an image, font or third party. Suppressing the CSS-hidden wordmark below 1211px removes about 23 KiB of mobile transfer and improved the five-run median from 85 to 87, but does not meet the requested 93 threshold. See `reports/lighthouse/mobile-stability-baseline.md`; production hosting remains untested.

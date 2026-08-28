@@ -10,8 +10,8 @@ const pagePath = "/plumbing-advice/what-to-do-if-water-is-coming-through-your-ce
 const contentFreshness = getAdviceContentFreshness(pagePath);
 
 export const metadata: Metadata = {
-  title: "Ceiling Leak: What to Do Safely",
-  description: "What to do if water is coming through your ceiling: safety-first checks, what to photograph and when to send a Kensington or W8 enquiry.",
+  title: "Ceiling Leak | What to Do Safely",
+  description: "Water coming through a ceiling? Start with safety, avoid electrical risks, note the room above and take useful photos from a safe position.",
   alternates: { canonical: "/plumbing-advice/what-to-do-if-water-is-coming-through-your-ceiling" },
 };
 

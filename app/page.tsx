@@ -1,6 +1,5 @@
 import Header from "./_components/Header";
 import AreaCoverageSection from "./_components/AreaCoverageSection";
-import EnquiryBuilder from "./_components/EnquiryBuilder";
 import Hero from "./_components/Hero";
 import HomeEnquiryVisual from "./_components/HomeEnquiryVisual";
 import HomeResourcePath from "./_components/HomeResourcePath";
@@ -15,10 +14,9 @@ export default function Home() {
 
       <main>
         <Hero />
-        <ServicesPreview />
         <ProblemSelector />
+        <ServicesPreview />
         <HomeEnquiryVisual />
-        <EnquiryBuilder />
         <AreaCoverageSection />
         <RecentlyReviewedGuides />
         <HomeResourcePath />

@@ -6,8 +6,8 @@ import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "..
 import { ServiceStructuredData } from "../../_components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Shower Repair in Kensington",
-  description: "Describe a shower that runs hot and cold, has weak flow, leaks or drains slowly in Kensington or W8, with useful fitting details.",
+  title: "Shower Repair Kensington | Leaks, Flow & Temperature Problems",
+  description: "Shower running hot and cold, leaking or losing flow in Kensington? Compare the visible symptoms and send useful fitting details.",
   alternates: { canonical: "/services/shower-repair" },
 };
 

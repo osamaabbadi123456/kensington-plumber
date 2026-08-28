@@ -3,7 +3,7 @@ import { AlertTriangle, Camera, Droplets, Gauge, Toilet, Volume2, Wrench } from 
 import Header from "../../_components/Header";
 import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "../../_components/ServicePrimitives";
 
-export const metadata: Metadata = { title: "Toilet Keeps Running: Cistern Fault Signs", description: "If a toilet keeps filling or running into the pan in Kensington or W8, identify the cistern behaviour and send the useful details.", alternates: { canonical: "/plumbing-problems/toilet-keeps-running" } };
+export const metadata: Metadata = { title: "Toilet Keeps Running | Cistern Fault Signs", description: "Toilet keeps filling or running into the pan in Kensington? Identify the cistern behaviour and send the details that help explain it.", alternates: { canonical: "/plumbing-problems/toilet-keeps-running" } };
 
 export default function ToiletKeepsRunningPage() {
   return <><Header /><main className="problem-detail running-toilet-problem">

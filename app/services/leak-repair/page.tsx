@@ -6,8 +6,8 @@ import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "..
 import { ServiceStructuredData } from "../../_components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Leak Repair in Kensington",
-  description: "Describe a visible or hidden water leak in Kensington or W8, including where water is appearing and photos that help explain it.",
+  title: "Leak Repair Kensington | Pipes, Fittings & Water Leaks",
+  description: "Water appearing from a pipe, fitting, wall or under a sink in Kensington? See what details help describe the leak and send your request.",
   alternates: { canonical: "/services/leak-repair" },
 };
 

@@ -3,8 +3,8 @@ import AreaPage from "../../_components/AreaPage";
 import { areaPages } from "../../_data/areaPages";
 
 export const metadata: Metadata = {
-  title: "Plumber in West Kensington",
-  description: "For a West Kensington plumbing enquiry, compare visible pipework leaks, toilet symptoms and bathroom fixtures before sending the details.",
+  title: "Plumber West Kensington | Pipework, Toilets & Bathrooms",
+  description: "Need a plumber in West Kensington? Compare visible pipework leaks, toilet symptoms and bathroom fixtures, then send clear details.",
   alternates: { canonical: "/areas/west-kensington" },
 };
 

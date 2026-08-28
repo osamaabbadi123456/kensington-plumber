@@ -3,8 +3,8 @@ import AreaPage from "../../_components/AreaPage";
 import { areaPages } from "../../_data/areaPages";
 
 export const metadata: Metadata = {
-  title: "Plumber in Holland Park",
-  description: "For a Holland Park plumbing enquiry, include the postcode and choose a leak, shower, bathroom or toilet symptom route before sending details.",
+  title: "Plumber Holland Park | Leaks, Showers & Toilets",
+  description: "Need a plumber in Holland Park? Include the postcode and choose a leak, shower, bathroom or toilet route before sending details.",
   alternates: { canonical: "/areas/holland-park" },
 };
 

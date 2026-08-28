@@ -5,8 +5,8 @@ import AreaCoverageSection from "../_components/AreaCoverageSection";
 import Header from "../_components/Header";
 
 export const metadata: Metadata = {
-  title: "Covered Areas for Plumbing Enquiries",
-  description: "Plumbing enquiries across Kensington/W8 and confirmed nearby areas including South Kensington, West Kensington, Earl's Court, Notting Hill and Holland Park.",
+  title: "Plumbers in Kensington & Nearby Areas",
+  description: "Find plumbing routes for Kensington/W8 and confirmed nearby areas including South Kensington, Earl's Court, Notting Hill and Holland Park.",
   alternates: { canonical: "/areas" },
 };
 

@@ -6,8 +6,8 @@ import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "..
 import { ServiceStructuredData } from "../../_components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Tap Repair in Kensington",
-  description: "Describe a dripping, stiff, noisy or leaking kitchen or bathroom tap in Kensington or W8, including where the water appears.",
+  title: "Tap Repair Kensington | Dripping, Leaking & Stiff Taps",
+  description: "Dripping, leaking, stiff or noisy tap in Kensington? Identify the fitting and where water appears, then send the useful details.",
   alternates: { canonical: "/services/tap-repair" },
 };
 

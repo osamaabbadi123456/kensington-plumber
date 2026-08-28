@@ -9,8 +9,8 @@ import { siteConfig } from "../_data/siteConfig";
 import { getWhatsAppUrl } from "../_lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Contact for Plumbing Enquiries",
-  description: "Send a plumbing enquiry by WhatsApp or email for Kensington/W8 and confirmed nearby covered areas.",
+  title: "Contact Plumber Kensington | WhatsApp or Email",
+  description: "Contact Plumber Kensington by WhatsApp or email with the area, room, fixture, symptom and photos that help explain the problem.",
   alternates: { canonical: "/contact" },
 };
 

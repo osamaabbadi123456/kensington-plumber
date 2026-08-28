@@ -3,8 +3,8 @@ import AreaPage from "../../_components/AreaPage";
 import { areaPages } from "../../_data/areaPages";
 
 export const metadata: Metadata = {
-  title: "Plumber in Earl's Court",
-  description: "For an Earl's Court plumbing enquiry, use safety-first ceiling-water, leak and toilet routes, then send the room and location details.",
+  title: "Plumber Earl's Court | Leaks, Ceilings & Toilets",
+  description: "Need a plumber in Earl's Court? Start with ceiling water, leak or toilet symptoms, then send the room, location and useful details.",
   alternates: { canonical: "/areas/earls-court" },
 };
 

@@ -12,6 +12,7 @@ const breadcrumbPaths: Record<string, string> = {
   "Tap repair": "/services/tap-repair",
   "Bathroom plumbing": "/services/bathroom-plumbing",
   "Shower repair": "/services/shower-repair",
+  "Radiator and heating plumbing": "/services/radiator-heating",
   "Water coming through the ceiling": "/plumbing-problems/water-coming-through-ceiling",
   "Toilet will not flush": "/plumbing-problems/toilet-wont-flush",
   "Toilet keeps running": "/plumbing-problems/toilet-keeps-running",

@@ -10,8 +10,8 @@ const pagePath = "/plumbing-glossary";
 const contentFreshness = getGlossaryContentFreshness(pagePath);
 
 export const metadata: Metadata = {
-  title: "Plumbing Glossary: Plain-English Terms",
-  description: "Plain-English explanations of plumbing terms such as stop tap, cistern, trap and isolation valve, with useful enquiry routes.",
+  title: "Plumbing Glossary | Plain-English Terms",
+  description: "Plain-English explanations of plumbing terms such as stop tap, cistern, trap and isolation valve, with useful routes for common problems.",
   alternates: { canonical: "/plumbing-glossary" },
 };
 

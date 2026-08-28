@@ -101,6 +101,8 @@
 - [x] Record the owner-only phone/mailbox test checklist without falsely marking it passed (2026-08-27)
 - [x] Capture the final requested local visual routes at 390px, 768px and 1440px, including legal pages, footer links, logo, dock and area/enquiry controls (2026-08-28; 17 routes, with header-safe anchor and card-destination checks)
 - [x] Run and record a repeatable local Lighthouse audit (2026-08-28; mobile 96/100/100/100 and desktop 100/100/100/100; see `reports/lighthouse/summary.md`)
+- [x] Simulate indexable production metadata locally without weakening the Netlify preview guard (2026-08-28; canonical, robots and 32-route sitemap verified; see `reports/production-seo-readiness.md`)
+- [x] Add a bounded radiator/heating-plumbing route with no boiler, gas, certification, price or availability claims (2026-08-28)
 - [x] Complete pre-launch QA and record results under `reports/` (`pre-launch-route-audit.md`, `content-similarity.md` and Lighthouse availability note, 2026-08-25)
 - [ ] Obtain explicit owner approval before any deployment, publication, push, or DNS change
 

@@ -11,7 +11,7 @@ const contentFreshness = getAdviceContentFreshness(pagePath);
 
 export const metadata: Metadata = {
   title: "How to Describe a Plumbing Problem",
-  description: "Use a simple checklist for location, fixture, timing and photos so a Kensington or W8 plumbing enquiry is clearer from the start.",
+  description: "Use a simple checklist for the location, fixture, timing and photos that help make a plumbing request clearer from the start.",
   alternates: { canonical: "/plumbing-advice/what-details-to-send-for-a-plumbing-enquiry" },
 };
 

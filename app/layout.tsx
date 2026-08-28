@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
 
   title: {
-    default: "Plumber Kensington | Plumbing Enquiries in W8",
-    template: "%s | Plumber Kensington",
+    default: "Plumber Kensington | Leaks, Toilets, Taps & Showers in W8",
+    template: "%s",
   },
 
   description: siteConfig.description,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Plumber Kensington | Plumbing Enquiries in W8",
+    title: "Plumber Kensington | Leaks, Toilets, Taps & Showers in W8",
     description: siteConfig.description,
   },
 

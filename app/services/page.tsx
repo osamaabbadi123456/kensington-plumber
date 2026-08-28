@@ -4,8 +4,8 @@ import HubPage from "../_components/HubPage";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Plumbing Services in Kensington",
-  description: "Explore plumbing enquiry routes for Kensington and W8, including leaks, toilets, taps, bathrooms, showers and urgent situations.",
+  title: "Plumbing Services Kensington | Leaks, Toilets, Taps & More",
+  description: "Explore help for leaks, toilets, taps, bathrooms, showers and radiator pipework in Kensington. Choose the route that best fits the problem.",
   alternates: { canonical: "/services" },
 };
 
@@ -18,13 +18,13 @@ export default function ServicesPage() {
     { title: "Tap repair", description: "Dripping, stiff, noisy or poorly closing kitchen and bathroom basin taps.", href: "/services/tap-repair", icon: Droplets, actionLabel: "View service" },
     { title: "Bathroom plumbing", description: "Enquiries involving basins, baths, showers, toilets and bathroom fixture plumbing.", href: "/services/bathroom-plumbing", icon: Bath, actionLabel: "View service" },
     { title: "Shower repair", description: "Shower pressure, temperature, leaks, drainage and control-related plumbing symptoms.", href: "/services/shower-repair", icon: ShowerHead, actionLabel: "View service" },
+    { title: "Radiator and heating plumbing", description: "Radiator leaks, valves, pipework and uneven heating symptoms, without boiler or gas claims.", href: "/services/radiator-heating", icon: Heater, actionLabel: "View service" },
   ]}>
     <div className="hub-depth-section">
       <div className="hub-depth-heading"><span className="section-kicker">Other plumbing enquiry types</span><h2>Useful routes where a standalone page would add little.</h2><p>These sections help describe the visible problem before you build an enquiry. They do not widen the site into unconfirmed boiler, gas, commercial or tank work.</p></div>
       <div className="hub-depth-grid">
         <article id="pipework"><Link className="hub-depth-card hub-depth-guidance" href="/services/leak-repair#pipework"><Wrench size={24} aria-hidden="true" /><h3>Pipework and visible fittings</h3><p>For an exposed pipe, leaking joint, flexi connection, isolation-valve area or under-sink pipework, start with Leak Repair&apos;s pipework section. State where the water appears and what is nearby.</p><span>Read guidance</span></Link></article>
         <article id="basin-sink"><Link className="hub-depth-card hub-depth-guidance" href="/services/bathroom-plumbing#basin-sink"><Bath size={24} aria-hidden="true" /><h3>Basin or sink plumbing</h3><p>Visible water under a basin, at the trap, around a tap connection or beside a waste pipe belongs with the bathroom fixture context. No drain-unblocking claim is implied.</p><span>Read guidance</span></Link></article>
-        <article id="radiator-heating"><Link className="hub-depth-card hub-depth-guidance" href="/services#radiator-heating"><Heater size={24} aria-hidden="true" /><h3>Radiator or heating plumbing enquiry</h3><p>Describe a radiator leak, visible valve or pipework concern, the room and what you can see. Do not assume a boiler or gas diagnosis from the symptom.</p><span>Read guidance</span></Link></article>
       </div>
     </div>
   </HubPage>;

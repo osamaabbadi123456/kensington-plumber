@@ -20,11 +20,13 @@ export function BrandWordmark() {
   return (
     <picture className="brand-wordmark">
       <source
+        media="(min-width: 1211px)"
         sizes="224px"
         srcSet="/brand/plumber-kensington-horizontal-logo-480.avif 480w, /brand/plumber-kensington-horizontal-logo-1086.avif 1086w"
         type="image/avif"
       />
       <source
+        media="(min-width: 1211px)"
         sizes="224px"
         srcSet="/brand/plumber-kensington-horizontal-logo-480.webp 480w, /brand/plumber-kensington-horizontal-logo-1086.webp 1086w"
         type="image/webp"
@@ -32,9 +34,7 @@ export function BrandWordmark() {
       <img
         alt=""
         height={362}
-        sizes="224px"
-        src="/brand/plumber-kensington-horizontal-logo-480.webp"
-        srcSet="/brand/plumber-kensington-horizontal-logo-480.webp 480w, /brand/plumber-kensington-horizontal-logo-1086.webp 1086w"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
         width={1086}
       />
     </picture>

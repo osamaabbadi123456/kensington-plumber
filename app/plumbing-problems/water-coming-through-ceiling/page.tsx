@@ -4,7 +4,7 @@ import Header from "../../_components/Header";
 import VisualAsset from "../../_components/VisualAsset";
 import { EnquiryCTA, RelatedLinks, ServiceBreadcrumbs, ServiceSection } from "../../_components/ServicePrimitives";
 
-export const metadata: Metadata = { title: "Water Coming Through Your Ceiling", description: "Water coming through a ceiling in Kensington or W8? Start with safe steps, avoid electrical risks and send clear photos and location details.", alternates: { canonical: "/plumbing-problems/water-coming-through-ceiling" } };
+export const metadata: Metadata = { title: "Water Coming Through Ceiling | Safe Steps in Kensington", description: "Water coming through a ceiling in Kensington? Start with safe steps, avoid electrical risks and note the room, visible water and useful photos.", alternates: { canonical: "/plumbing-problems/water-coming-through-ceiling" } };
 
 export default function WaterComingThroughCeilingPage() {
   return <><Header /><main className="problem-detail ceiling-problem">
